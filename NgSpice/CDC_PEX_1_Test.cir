@@ -1,0 +1,79 @@
+Test netlist
+.lib "/home/ryan/MagicTests/SKY130/git_open_pdks/sky130/sky130A/libs.tech/ngspice/sky130.lib.spice" tt
+.include "CDC_PEX.spice"
+
+X0 R CF V_GND V_LOW V_HIGH V_SENSE DS1.0 DS1.1 DS1.2 DS1.3 DS1.4 DS1.5 DS1.6 DS1.7 DS1.8 DS1.9 DS1.10 DS1.11 DS1.12 DS1.13 DS1.14 DS1.15 DS2.0 DS2.1 DS2.2 DS2.3 DS2.4 DS2.5 DS2.6 DS2.7 DS2.8 DS2.9 DS2.10 DS2.11 DS2.12 DS2.13 DS2.14 DS2.15 DM.0 DM.1 DM.2 DM.3 DM.4 DM.5 DM.6 DM.7 DM.8 DM.9 DM.10 DM.11 DM.12 DM.13 DM.14 DM.15 DM.16 DM.17 DM.18 DM.19 CDC
+
+V0 V_GND 0 DC 0
+V1 V_LOW 0 DC 1.4V
+V2 V_HIGH 0 DC 1.8V
+V3 R 0 DC PULSE(1.8V 0 70ns 1fs 1fs 10000ns 10000ns)
+C0 V_SENSE 0 1.25pF
+.IC V(V_SENSE)=0V
+
+.tran 40ps 140ns uic
+
+.control
+    run
+    let LOW_POWER_VECTOR = -i(V1) * v(V_LOW)
+    let HIGH_POWER_VECTOR = -i(V2) * v(V_HIGH)
+    print CF
+    meas tran PLBR AVG LOW_POWER_VECTOR from=1ns to=69ns
+    meas tran PLAR AVG LOW_POWER_VECTOR from=71ns to=110ns
+    meas tran PHBR AVG HIGH_POWER_VECTOR from=0ns to=69ns
+    meas tran PHAR AVG HIGH_POWER_VECTOR from=71ns to=110ns
+    meas tran DS1.0 find DS1.0 at=140ns
+    meas tran DS1.1 find DS1.1 at=140ns
+    meas tran DS1.2 find DS1.2 at=140ns
+    meas tran DS1.3 find DS1.3 at=140ns
+    meas tran DS1.4 find DS1.4 at=140ns
+    meas tran DS1.5 find DS1.5 at=140ns
+    meas tran DS1.6 find DS1.6 at=140ns
+    meas tran DS1.7 find DS1.7 at=140ns
+    meas tran DS1.8 find DS1.8 at=140ns
+    meas tran DS1.9 find DS1.9 at=140ns
+    meas tran DS1.10 find DS1.10 at=140ns
+    meas tran DS1.11 find DS1.11 at=140ns
+    meas tran DS1.12 find DS1.12 at=140ns
+    meas tran DS1.13 find DS1.13 at=140ns
+    meas tran DS1.14 find DS1.14 at=140ns
+    meas tran DS1.15 find DS1.15 at=140ns
+    meas tran DS2.0 find DS2.0 at=140ns
+    meas tran DS2.1 find DS2.1 at=140ns
+    meas tran DS2.2 find DS2.2 at=140ns
+    meas tran DS2.3 find DS2.3 at=140ns
+    meas tran DS2.4 find DS2.4 at=140ns
+    meas tran DS2.5 find DS2.5 at=140ns
+    meas tran DS2.6 find DS2.6 at=140ns
+    meas tran DS2.7 find DS2.7 at=140ns
+    meas tran DS2.8 find DS2.8 at=140ns
+    meas tran DS2.9 find DS2.9 at=140ns
+    meas tran DS2.10 find DS2.10 at=140ns
+    meas tran DS2.11 find DS2.11 at=140ns
+    meas tran DS2.12 find DS2.12 at=140ns
+    meas tran DS2.13 find DS2.13 at=140ns
+    meas tran DS2.14 find DS2.14 at=140ns
+    meas tran DS2.15 find DS2.15 at=140ns
+    meas tran DM.0 find DM.0 at=140ns
+    meas tran DM.1 find DM.1 at=140ns
+    meas tran DM.2 find DM.2 at=140ns
+    meas tran DM.3 find DM.3 at=140ns
+    meas tran DM.4 find DM.4 at=140ns
+    meas tran DM.5 find DM.5 at=140ns
+    meas tran DM.6 find DM.6 at=140ns
+    meas tran DM.7 find DM.7 at=140ns
+    meas tran DM.8 find DM.8 at=140ns
+    meas tran DM.9 find DM.9 at=140ns
+    meas tran DM.10 find DM.10 at=140ns
+    meas tran DM.11 find DM.11 at=140ns
+    meas tran DM.12 find DM.12 at=140ns
+    meas tran DM.13 find DM.13 at=140ns
+    meas tran DM.14 find DM.14 at=140ns
+    meas tran DM.15 find DM.15 at=140ns
+    meas tran DM.16 find DM.16 at=140ns
+    meas tran DM.17 find DM.17 at=140ns
+    meas tran DM.18 find DM.18 at=140ns
+    meas tran DM.19 find DM.19 at=140ns
+.endc
+
+.end
