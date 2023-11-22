@@ -1,0 +1,16 @@
+\CAP_CHAIN.cap_chain_inv1_1.cell_INV
+\CAP_CHAIN.cap_chain_inv2_1.cell_INV
+\CAP_CHAIN.cap_chain_inv3_1.cell_INV
+\CAP_CHAIN.cap_chain_inv4_1.cell_INV
+\CAP_CHAIN.cap_chain_inv5_1.cell_INV
+\CAP_CHAIN.cap_chain_inv6_1.cell_INV
+\CAP_CHAIN.cap_chain_inv7_1.cell_INV
+\CAP_CHAIN.cap_chain_inv8_1.cell_INV
+\CAP_CHAIN.cap_chain_inv9_1.cell_INV
+\CAP_CHAIN.cap_chain_inv10_1.cell_INV
+\CAP_CHAIN.cap_chain_inv11_1.cell_INV
+\CAP_CHAIN.cap_chain_inv12_1.cell_INV
+\CAP_CHAIN.cap_chain_inv13_1.cell_INV
+\CAP_CHAIN.cap_chain_inv14_1.cell_INV
+\CAP_CHAIN.cap_chain_inv15_1.cell_INV
+\CAP_CHAIN.cap_chain_inv16_1.cell_INV
