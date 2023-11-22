@@ -1,0 +1,6 @@
+* SPICE3 file created from transmission_gate.ext - technology: sky130A
+
+.subckt transmission_gate I O G VPWR VGND
+X0 O G I VGND sky130_fd_pr__nfet_01v8 ad=0.226 pd=1.92 as=0.226 ps=1.92 w=0.55 l=0.15
+X1 O G I VPWR sky130_fd_pr__pfet_01v8 ad=0.226 pd=1.92 as=0.226 ps=1.92 w=0.55 l=0.15
+.ends
