@@ -1,0 +1,7 @@
+* NGSPICE file created from transmission_gate.ext - technology: sky130A
+
+X0 O GN VPWR VPWR sky130_fd_pr__pfet_01v8 ad=0.226 pd=1.92 as=0.226 ps=1.92 w=0.55 l=0.15
+X1 O G VPWR VGND sky130_fd_pr__nfet_01v8 ad=0.226 pd=1.92 as=0.226 ps=1.92 w=0.55 l=0.15
+
+.global VPWR VGND
+.end

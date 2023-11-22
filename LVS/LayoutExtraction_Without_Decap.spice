@@ -1,0 +1,835 @@
+* NGSPICE file created from CDC.ext - technology: sky130A
+
+.subckt sky130_fd_sc_hd__inv_16 VNB VPB VGND VPWR Y A
+X0 Y A VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0.135 pd=1.27 as=0.135 ps=1.27 w=1 l=0.15
+X1 VPWR A Y VPB sky130_fd_pr__pfet_01v8_hvt ad=0.26 pd=2.52 as=0.135 ps=1.27 w=1 l=0.15
+X2 VGND A Y VNB sky130_fd_pr__nfet_01v8 ad=0.0878 pd=0.92 as=0.0878 ps=0.92 w=0.65 l=0.15
+X3 Y A VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0.135 pd=1.27 as=0.135 ps=1.27 w=1 l=0.15
+X4 VGND A Y VNB sky130_fd_pr__nfet_01v8 ad=0.0878 pd=0.92 as=0.0878 ps=0.92 w=0.65 l=0.15
+X5 VGND A Y VNB sky130_fd_pr__nfet_01v8 ad=0.0878 pd=0.92 as=0.0878 ps=0.92 w=0.65 l=0.15
+X6 Y A VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0.135 pd=1.27 as=0.26 ps=2.52 w=1 l=0.15
+X7 VGND A Y VNB sky130_fd_pr__nfet_01v8 ad=0.169 pd=1.82 as=0.0878 ps=0.92 w=0.65 l=0.15
+X8 VPWR A Y VPB sky130_fd_pr__pfet_01v8_hvt ad=0.135 pd=1.27 as=0.135 ps=1.27 w=1 l=0.15
+X9 Y A VGND VNB sky130_fd_pr__nfet_01v8 ad=0.0878 pd=0.92 as=0.0878 ps=0.92 w=0.65 l=0.15
+X10 VPWR A Y VPB sky130_fd_pr__pfet_01v8_hvt ad=0.135 pd=1.27 as=0.135 ps=1.27 w=1 l=0.15
+X11 Y A VGND VNB sky130_fd_pr__nfet_01v8 ad=0.0878 pd=0.92 as=0.0878 ps=0.92 w=0.65 l=0.15
+X12 Y A VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0.135 pd=1.27 as=0.135 ps=1.27 w=1 l=0.15
+X13 VPWR A Y VPB sky130_fd_pr__pfet_01v8_hvt ad=0.135 pd=1.27 as=0.135 ps=1.27 w=1 l=0.15
+X14 Y A VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0.135 pd=1.27 as=0.135 ps=1.27 w=1 l=0.15
+X15 VGND A Y VNB sky130_fd_pr__nfet_01v8 ad=0.0878 pd=0.92 as=0.0878 ps=0.92 w=0.65 l=0.15
+X16 Y A VGND VNB sky130_fd_pr__nfet_01v8 ad=0.0878 pd=0.92 as=0.169 ps=1.82 w=0.65 l=0.15
+X17 VGND A Y VNB sky130_fd_pr__nfet_01v8 ad=0.0878 pd=0.92 as=0.0878 ps=0.92 w=0.65 l=0.15
+X18 VGND A Y VNB sky130_fd_pr__nfet_01v8 ad=0.0878 pd=0.92 as=0.0878 ps=0.92 w=0.65 l=0.15
+X19 Y A VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0.135 pd=1.27 as=0.135 ps=1.27 w=1 l=0.15
+X20 VGND A Y VNB sky130_fd_pr__nfet_01v8 ad=0.0878 pd=0.92 as=0.0878 ps=0.92 w=0.65 l=0.15
+X21 Y A VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0.135 pd=1.27 as=0.135 ps=1.27 w=1 l=0.15
+X22 VPWR A Y VPB sky130_fd_pr__pfet_01v8_hvt ad=0.135 pd=1.27 as=0.135 ps=1.27 w=1 l=0.15
+X23 VPWR A Y VPB sky130_fd_pr__pfet_01v8_hvt ad=0.135 pd=1.27 as=0.135 ps=1.27 w=1 l=0.15
+X24 VPWR A Y VPB sky130_fd_pr__pfet_01v8_hvt ad=0.135 pd=1.27 as=0.135 ps=1.27 w=1 l=0.15
+X25 Y A VGND VNB sky130_fd_pr__nfet_01v8 ad=0.0878 pd=0.92 as=0.0878 ps=0.92 w=0.65 l=0.15
+X26 Y A VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0.135 pd=1.27 as=0.135 ps=1.27 w=1 l=0.15
+X27 Y A VGND VNB sky130_fd_pr__nfet_01v8 ad=0.0878 pd=0.92 as=0.0878 ps=0.92 w=0.65 l=0.15
+X28 Y A VGND VNB sky130_fd_pr__nfet_01v8 ad=0.0878 pd=0.92 as=0.0878 ps=0.92 w=0.65 l=0.15
+X29 Y A VGND VNB sky130_fd_pr__nfet_01v8 ad=0.0878 pd=0.92 as=0.0878 ps=0.92 w=0.65 l=0.15
+X30 VPWR A Y VPB sky130_fd_pr__pfet_01v8_hvt ad=0.135 pd=1.27 as=0.135 ps=1.27 w=1 l=0.15
+X31 Y A VGND VNB sky130_fd_pr__nfet_01v8 ad=0.0878 pd=0.92 as=0.0878 ps=0.92 w=0.65 l=0.15
+.ends
+
+.subckt sky130_fd_sc_hd__nand2_8 VNB VPB VGND VPWR A Y B
+X0 a_27_47# B VGND VNB sky130_fd_pr__nfet_01v8 ad=0.0878 pd=0.92 as=0.0878 ps=0.92 w=0.65 l=0.15
+X1 Y A VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0.135 pd=1.27 as=0.135 ps=1.27 w=1 l=0.15
+X2 a_27_47# B VGND VNB sky130_fd_pr__nfet_01v8 ad=0.0878 pd=0.92 as=0.0878 ps=0.92 w=0.65 l=0.15
+X3 a_27_47# A Y VNB sky130_fd_pr__nfet_01v8 ad=0.0878 pd=0.92 as=0.0878 ps=0.92 w=0.65 l=0.15
+X4 a_27_47# A Y VNB sky130_fd_pr__nfet_01v8 ad=0.0878 pd=0.92 as=0.0878 ps=0.92 w=0.65 l=0.15
+X5 Y B VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0.135 pd=1.27 as=0.135 ps=1.27 w=1 l=0.15
+X6 VPWR B Y VPB sky130_fd_pr__pfet_01v8_hvt ad=0.135 pd=1.27 as=0.135 ps=1.27 w=1 l=0.15
+X7 Y A a_27_47# VNB sky130_fd_pr__nfet_01v8 ad=0.0878 pd=0.92 as=0.0878 ps=0.92 w=0.65 l=0.15
+X8 Y A a_27_47# VNB sky130_fd_pr__nfet_01v8 ad=0.0878 pd=0.92 as=0.0878 ps=0.92 w=0.65 l=0.15
+X9 Y A a_27_47# VNB sky130_fd_pr__nfet_01v8 ad=0.0878 pd=0.92 as=0.0878 ps=0.92 w=0.65 l=0.15
+X10 Y B VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0.135 pd=1.27 as=0.135 ps=1.27 w=1 l=0.15
+X11 VPWR A Y VPB sky130_fd_pr__pfet_01v8_hvt ad=0.135 pd=1.27 as=0.135 ps=1.27 w=1 l=0.15
+X12 Y A VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0.135 pd=1.27 as=0.135 ps=1.27 w=1 l=0.15
+X13 VPWR B Y VPB sky130_fd_pr__pfet_01v8_hvt ad=0.135 pd=1.27 as=0.135 ps=1.27 w=1 l=0.15
+X14 VPWR A Y VPB sky130_fd_pr__pfet_01v8_hvt ad=0.135 pd=1.27 as=0.135 ps=1.27 w=1 l=0.15
+X15 a_27_47# B VGND VNB sky130_fd_pr__nfet_01v8 ad=0.0878 pd=0.92 as=0.0878 ps=0.92 w=0.65 l=0.15
+X16 a_27_47# B VGND VNB sky130_fd_pr__nfet_01v8 ad=0.0878 pd=0.92 as=0.0878 ps=0.92 w=0.65 l=0.15
+X17 a_27_47# A Y VNB sky130_fd_pr__nfet_01v8 ad=0.247 pd=2.06 as=0.0878 ps=0.92 w=0.65 l=0.15
+X18 Y A VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0.135 pd=1.27 as=0.135 ps=1.27 w=1 l=0.15
+X19 VPWR B Y VPB sky130_fd_pr__pfet_01v8_hvt ad=0.135 pd=1.27 as=0.135 ps=1.27 w=1 l=0.15
+X20 VGND B a_27_47# VNB sky130_fd_pr__nfet_01v8 ad=0.0878 pd=0.92 as=0.0878 ps=0.92 w=0.65 l=0.15
+X21 VGND B a_27_47# VNB sky130_fd_pr__nfet_01v8 ad=0.0878 pd=0.92 as=0.0878 ps=0.92 w=0.65 l=0.15
+X22 Y B VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0.135 pd=1.27 as=0.135 ps=1.27 w=1 l=0.15
+X23 VPWR A Y VPB sky130_fd_pr__pfet_01v8_hvt ad=0.38 pd=2.76 as=0.135 ps=1.27 w=1 l=0.15
+X24 VGND B a_27_47# VNB sky130_fd_pr__nfet_01v8 ad=0.0878 pd=0.92 as=0.0878 ps=0.92 w=0.65 l=0.15
+X25 Y A a_27_47# VNB sky130_fd_pr__nfet_01v8 ad=0.0878 pd=0.92 as=0.0878 ps=0.92 w=0.65 l=0.15
+X26 VPWR B Y VPB sky130_fd_pr__pfet_01v8_hvt ad=0.135 pd=1.27 as=0.135 ps=1.27 w=1 l=0.15
+X27 Y A VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0.135 pd=1.27 as=0.135 ps=1.27 w=1 l=0.15
+X28 Y B VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0.135 pd=1.27 as=0.26 ps=2.52 w=1 l=0.15
+X29 VPWR A Y VPB sky130_fd_pr__pfet_01v8_hvt ad=0.135 pd=1.27 as=0.135 ps=1.27 w=1 l=0.15
+X30 VGND B a_27_47# VNB sky130_fd_pr__nfet_01v8 ad=0.0878 pd=0.92 as=0.169 ps=1.82 w=0.65 l=0.15
+X31 a_27_47# A Y VNB sky130_fd_pr__nfet_01v8 ad=0.0878 pd=0.92 as=0.0878 ps=0.92 w=0.65 l=0.15
+.ends
+
+.subckt transmission_gate G VPWR VGND O GN
+X0 O G VPWR VGND sky130_fd_pr__nfet_01v8 ad=0.226 pd=1.92 as=0.226 ps=1.92 w=0.55 l=0.15
+X1 O GN VPWR VPWR sky130_fd_pr__pfet_01v8 ad=0.226 pd=1.92 as=0.226 ps=1.92 w=0.55 l=0.15
+.ends
+
+.subckt sky130_fd_sc_hd__decap_4 VNB VPB VGND VPWR
+X0 VPWR VGND VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0.226 pd=2.26 as=0.452 ps=4.52 w=0.87 l=1.05
+X1 VGND VPWR VGND VNB sky130_fd_pr__nfet_01v8 ad=0.143 pd=1.62 as=0.286 ps=3.24 w=0.55 l=1.05
+.ends
+
+.subckt sky130_fd_sc_hd__dfbbn_1 VNB VPB VGND VPWR Q Q_N RESET_B SET_B D CLK_N
+X0 a_791_47# SET_B VGND VNB sky130_fd_pr__nfet_01v8 ad=0.0974 pd=0.97 as=0.0882 ps=0.84 w=0.42 l=0.15
+X1 a_1555_47# SET_B VGND VNB sky130_fd_pr__nfet_01v8 ad=0.109 pd=1.03 as=0.0703 ps=0.755 w=0.42 l=0.15
+X2 VPWR RESET_B a_941_21# VPB sky130_fd_pr__pfet_01v8_hvt ad=0.154 pd=1.34 as=0.17 ps=1.81 w=0.64 l=0.15
+X3 a_1415_315# SET_B VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0.132 pd=1.22 as=0.0956 ps=0.875 w=0.42 l=0.15
+X4 a_791_47# a_941_21# a_647_21# VNB sky130_fd_pr__nfet_01v8 ad=0.166 pd=1.8 as=0.0864 ps=0.91 w=0.64 l=0.15
+X5 VGND a_1415_315# a_1363_47# VNB sky130_fd_pr__nfet_01v8 ad=0.0703 pd=0.755 as=0.066 ps=0.745 w=0.42 l=0.15
+X6 a_1340_413# a_27_47# a_1256_413# VPB sky130_fd_pr__pfet_01v8_hvt ad=0.0787 pd=0.795 as=0.0567 ps=0.69 w=0.42 l=0.15
+X7 VPWR CLK_N a_27_47# VPB sky130_fd_pr__pfet_01v8_hvt ad=0.0864 pd=0.91 as=0.166 ps=1.8 w=0.64 l=0.15
+X8 a_381_47# D VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0.0651 pd=0.73 as=0.109 ps=1.36 w=0.42 l=0.15
+X9 a_473_413# a_193_47# a_381_47# VNB sky130_fd_pr__nfet_01v8 ad=0.0675 pd=0.735 as=0.066 ps=0.745 w=0.36 l=0.15
+X10 a_1555_47# a_941_21# a_1415_315# VNB sky130_fd_pr__nfet_01v8 ad=0.166 pd=1.8 as=0.0864 ps=0.91 w=0.64 l=0.15
+X11 VPWR a_1415_315# a_2136_47# VPB sky130_fd_pr__pfet_01v8_hvt ad=0.149 pd=1.33 as=0.166 ps=1.8 w=0.64 l=0.15
+X12 a_1256_413# a_193_47# a_1112_329# VPB sky130_fd_pr__pfet_01v8_hvt ad=0.0567 pd=0.69 as=0.174 ps=1.41 w=0.42 l=0.15
+X13 a_581_47# a_27_47# a_473_413# VNB sky130_fd_pr__nfet_01v8 ad=0.0671 pd=0.75 as=0.0675 ps=0.735 w=0.36 l=0.15
+X14 a_647_21# a_473_413# a_791_47# VNB sky130_fd_pr__nfet_01v8 ad=0.0864 pd=0.91 as=0.0974 ps=0.97 w=0.64 l=0.15
+X15 a_647_21# SET_B VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0.147 pd=1.23 as=0.0798 ps=0.8 w=0.42 l=0.15
+X16 VPWR a_941_21# a_891_329# VPB sky130_fd_pr__pfet_01v8_hvt ad=0.225 pd=1.38 as=0.113 ps=1.11 w=0.84 l=0.15
+X17 a_557_413# a_193_47# a_473_413# VPB sky130_fd_pr__pfet_01v8_hvt ad=0.0945 pd=0.87 as=0.0567 ps=0.69 w=0.42 l=0.15
+X18 a_193_47# a_27_47# VGND VNB sky130_fd_pr__nfet_01v8 ad=0.109 pd=1.36 as=0.0567 ps=0.69 w=0.42 l=0.15
+X19 Q a_2136_47# VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0.26 pd=2.52 as=0.149 ps=1.33 w=1 l=0.15
+X20 a_473_413# a_27_47# a_381_47# VPB sky130_fd_pr__pfet_01v8_hvt ad=0.0567 pd=0.69 as=0.0651 ps=0.73 w=0.42 l=0.15
+X21 a_891_329# a_473_413# a_647_21# VPB sky130_fd_pr__pfet_01v8_hvt ad=0.113 pd=1.11 as=0.147 ps=1.23 w=0.84 l=0.15
+X22 Q_N a_1415_315# VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0.26 pd=2.52 as=0.154 ps=1.34 w=1 l=0.15
+X23 VGND RESET_B a_941_21# VNB sky130_fd_pr__nfet_01v8 ad=0.097 pd=0.975 as=0.109 ps=1.36 w=0.42 l=0.15
+X24 Q a_2136_47# VGND VNB sky130_fd_pr__nfet_01v8 ad=0.169 pd=1.82 as=0.097 ps=0.975 w=0.65 l=0.15
+X25 VPWR a_647_21# a_557_413# VPB sky130_fd_pr__pfet_01v8_hvt ad=0.0798 pd=0.8 as=0.0945 ps=0.87 w=0.42 l=0.15
+X26 a_1112_329# a_647_21# VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0.174 pd=1.41 as=0.225 ps=1.38 w=0.84 l=0.15
+X27 VGND a_647_21# a_581_47# VNB sky130_fd_pr__nfet_01v8 ad=0.0882 pd=0.84 as=0.0671 ps=0.75 w=0.42 l=0.15
+X28 VGND a_1415_315# a_2136_47# VNB sky130_fd_pr__nfet_01v8 ad=0.097 pd=0.975 as=0.109 ps=1.36 w=0.42 l=0.15
+X29 a_193_47# a_27_47# VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0.166 pd=1.8 as=0.0864 ps=0.91 w=0.64 l=0.15
+X30 VPWR a_941_21# a_1672_329# VPB sky130_fd_pr__pfet_01v8_hvt ad=0.218 pd=2.2 as=0.0882 ps=1.05 w=0.84 l=0.15
+X31 VPWR a_1415_315# a_1340_413# VPB sky130_fd_pr__pfet_01v8_hvt ad=0.0956 pd=0.875 as=0.0787 ps=0.795 w=0.42 l=0.15
+X32 a_1363_47# a_193_47# a_1256_413# VNB sky130_fd_pr__nfet_01v8 ad=0.066 pd=0.745 as=0.0486 ps=0.63 w=0.36 l=0.15
+X33 Q_N a_1415_315# VGND VNB sky130_fd_pr__nfet_01v8 ad=0.169 pd=1.82 as=0.097 ps=0.975 w=0.65 l=0.15
+X34 a_381_47# D VGND VNB sky130_fd_pr__nfet_01v8 ad=0.066 pd=0.745 as=0.109 ps=1.36 w=0.42 l=0.15
+X35 a_1159_47# a_647_21# VGND VNB sky130_fd_pr__nfet_01v8 ad=0.116 pd=1.09 as=0.166 ps=1.8 w=0.64 l=0.15
+X36 a_1672_329# a_1256_413# a_1415_315# VPB sky130_fd_pr__pfet_01v8_hvt ad=0.0882 pd=1.05 as=0.132 ps=1.22 w=0.84 l=0.15
+X37 VGND CLK_N a_27_47# VNB sky130_fd_pr__nfet_01v8 ad=0.0567 pd=0.69 as=0.109 ps=1.36 w=0.42 l=0.15
+X38 a_1256_413# a_27_47# a_1159_47# VNB sky130_fd_pr__nfet_01v8 ad=0.0486 pd=0.63 as=0.116 ps=1.09 w=0.36 l=0.15
+X39 a_1415_315# a_1256_413# a_1555_47# VNB sky130_fd_pr__nfet_01v8 ad=0.0864 pd=0.91 as=0.109 ps=1.03 w=0.64 l=0.15
+.ends
+
+.subckt sky130_fd_sc_hd__inv_1 VNB VPB VGND VPWR A Y
+X0 Y A VGND VNB sky130_fd_pr__nfet_01v8 ad=0.169 pd=1.82 as=0.169 ps=1.82 w=0.65 l=0.15
+X1 Y A VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0.26 pd=2.52 as=0.26 ps=2.52 w=1 l=0.15
+.ends
+
+.subckt sky130_fd_sc_hd__inv_8 VNB VPB VGND VPWR Y A
+X0 VPWR A Y VPB sky130_fd_pr__pfet_01v8_hvt ad=0.135 pd=1.27 as=0.135 ps=1.27 w=1 l=0.15
+X1 Y A VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0.135 pd=1.27 as=0.135 ps=1.27 w=1 l=0.15
+X2 Y A VGND VNB sky130_fd_pr__nfet_01v8 ad=0.0878 pd=0.92 as=0.0878 ps=0.92 w=0.65 l=0.15
+X3 Y A VGND VNB sky130_fd_pr__nfet_01v8 ad=0.0878 pd=0.92 as=0.0878 ps=0.92 w=0.65 l=0.15
+X4 VPWR A Y VPB sky130_fd_pr__pfet_01v8_hvt ad=0.135 pd=1.27 as=0.135 ps=1.27 w=1 l=0.15
+X5 Y A VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0.135 pd=1.27 as=0.26 ps=2.52 w=1 l=0.15
+X6 Y A VGND VNB sky130_fd_pr__nfet_01v8 ad=0.0878 pd=0.92 as=0.169 ps=1.82 w=0.65 l=0.15
+X7 VPWR A Y VPB sky130_fd_pr__pfet_01v8_hvt ad=0.26 pd=2.52 as=0.135 ps=1.27 w=1 l=0.15
+X8 Y A VGND VNB sky130_fd_pr__nfet_01v8 ad=0.0878 pd=0.92 as=0.0878 ps=0.92 w=0.65 l=0.15
+X9 Y A VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0.135 pd=1.27 as=0.135 ps=1.27 w=1 l=0.15
+X10 VPWR A Y VPB sky130_fd_pr__pfet_01v8_hvt ad=0.135 pd=1.27 as=0.135 ps=1.27 w=1 l=0.15
+X11 VGND A Y VNB sky130_fd_pr__nfet_01v8 ad=0.0878 pd=0.92 as=0.0878 ps=0.92 w=0.65 l=0.15
+X12 VGND A Y VNB sky130_fd_pr__nfet_01v8 ad=0.0878 pd=0.92 as=0.0878 ps=0.92 w=0.65 l=0.15
+X13 VGND A Y VNB sky130_fd_pr__nfet_01v8 ad=0.0878 pd=0.92 as=0.0878 ps=0.92 w=0.65 l=0.15
+X14 Y A VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0.135 pd=1.27 as=0.135 ps=1.27 w=1 l=0.15
+X15 VGND A Y VNB sky130_fd_pr__nfet_01v8 ad=0.169 pd=1.82 as=0.0878 ps=0.92 w=0.65 l=0.15
+.ends
+
+.subckt sky130_fd_sc_hd__nor2_1 VNB VPB VGND VPWR A B Y
+X0 VPWR A a_109_297# VPB sky130_fd_pr__pfet_01v8_hvt ad=0.26 pd=2.52 as=0.105 ps=1.21 w=1 l=0.15
+X1 VGND A Y VNB sky130_fd_pr__nfet_01v8 ad=0.169 pd=1.82 as=0.0878 ps=0.92 w=0.65 l=0.15
+X2 a_109_297# B Y VPB sky130_fd_pr__pfet_01v8_hvt ad=0.105 pd=1.21 as=0.26 ps=2.52 w=1 l=0.15
+X3 Y B VGND VNB sky130_fd_pr__nfet_01v8 ad=0.0878 pd=0.92 as=0.169 ps=1.82 w=0.65 l=0.15
+.ends
+
+.subckt sky130_fd_sc_hd__inv_4 VNB VPB VPWR VGND Y A
+X0 VPWR A Y VPB sky130_fd_pr__pfet_01v8_hvt ad=0.26 pd=2.52 as=0.135 ps=1.27 w=1 l=0.15
+X1 Y A VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0.135 pd=1.27 as=0.135 ps=1.27 w=1 l=0.15
+X2 Y A VGND VNB sky130_fd_pr__nfet_01v8 ad=0.0878 pd=0.92 as=0.169 ps=1.82 w=0.65 l=0.15
+X3 VPWR A Y VPB sky130_fd_pr__pfet_01v8_hvt ad=0.135 pd=1.27 as=0.135 ps=1.27 w=1 l=0.15
+X4 VGND A Y VNB sky130_fd_pr__nfet_01v8 ad=0.0878 pd=0.92 as=0.0878 ps=0.92 w=0.65 l=0.15
+X5 Y A VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0.135 pd=1.27 as=0.26 ps=2.52 w=1 l=0.15
+X6 VGND A Y VNB sky130_fd_pr__nfet_01v8 ad=0.169 pd=1.82 as=0.0878 ps=0.92 w=0.65 l=0.15
+X7 Y A VGND VNB sky130_fd_pr__nfet_01v8 ad=0.0878 pd=0.92 as=0.0878 ps=0.92 w=0.65 l=0.15
+.ends
+
+.subckt sky130_fd_sc_hd__inv_2 VNB VPB VPWR VGND Y A
+X0 Y A VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0.135 pd=1.27 as=0.26 ps=2.52 w=1 l=0.15
+X1 VGND A Y VNB sky130_fd_pr__nfet_01v8 ad=0.169 pd=1.82 as=0.0878 ps=0.92 w=0.65 l=0.15
+X2 Y A VGND VNB sky130_fd_pr__nfet_01v8 ad=0.0878 pd=0.92 as=0.169 ps=1.82 w=0.65 l=0.15
+X3 VPWR A Y VPB sky130_fd_pr__pfet_01v8_hvt ad=0.26 pd=2.52 as=0.135 ps=1.27 w=1 l=0.15
+.ends
+
+.subckt sky130_fd_sc_hd__conb_1 VNB VPB VGND VPWR LO HI
+R0 VPWR HI sky130_fd_pr__res_generic_po w=0.48 l=0.045
+R1 LO VGND sky130_fd_pr__res_generic_po w=0.48 l=0.045
+.ends
+
+.subckt sky130_fd_sc_hd__nand3_1 VNB VPB VGND VPWR A B Y C
+X0 VPWR B Y VPB sky130_fd_pr__pfet_01v8_hvt ad=0.165 pd=1.33 as=0.135 ps=1.27 w=1 l=0.15
+X1 Y A VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0.26 pd=2.52 as=0.165 ps=1.33 w=1 l=0.15
+X2 a_193_47# B a_109_47# VNB sky130_fd_pr__nfet_01v8 ad=0.107 pd=0.98 as=0.0878 ps=0.92 w=0.65 l=0.15
+X3 Y A a_193_47# VNB sky130_fd_pr__nfet_01v8 ad=0.169 pd=1.82 as=0.107 ps=0.98 w=0.65 l=0.15
+X4 Y C VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0.135 pd=1.27 as=0.26 ps=2.52 w=1 l=0.15
+X5 a_109_47# C VGND VNB sky130_fd_pr__nfet_01v8 ad=0.0878 pd=0.92 as=0.169 ps=1.82 w=0.65 l=0.15
+.ends
+
+.subckt sky130_fd_sc_hd__nand2_1 VNB VPB VGND VPWR A Y B
+X0 VPWR A Y VPB sky130_fd_pr__pfet_01v8_hvt ad=0.26 pd=2.52 as=0.135 ps=1.27 w=1 l=0.15
+X1 Y A a_113_47# VNB sky130_fd_pr__nfet_01v8 ad=0.169 pd=1.82 as=0.0878 ps=0.92 w=0.65 l=0.15
+X2 a_113_47# B VGND VNB sky130_fd_pr__nfet_01v8 ad=0.0878 pd=0.92 as=0.169 ps=1.82 w=0.65 l=0.15
+X3 Y B VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0.135 pd=1.27 as=0.26 ps=2.52 w=1 l=0.15
+.ends
+
+Xsky130_fd_sc_hd__inv_16_3 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__inv_16_5/A sky130_fd_sc_hd__inv_16_3/A
++ sky130_fd_sc_hd__inv_16
+Xsky130_fd_sc_hd__nand2_8_2 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__nand3_1_2/Y CLOCK_GEN.SR_Op.Q
++ sky130_fd_sc_hd__nand2_8_4/Y sky130_fd_sc_hd__nand2_8
+Xtransmission_gate_31 Reset V_HIGH V_GND V_SENSE transmission_gate_9/GN transmission_gate
+Xtransmission_gate_20 Reset V_HIGH V_GND V_SENSE transmission_gate_9/GN transmission_gate
+Xtransmission_gate_75 Reset V_HIGH V_GND V_SENSE transmission_gate_9/GN transmission_gate
+Xtransmission_gate_53 Reset V_HIGH V_GND V_SENSE transmission_gate_9/GN transmission_gate
+Xtransmission_gate_42 Reset V_HIGH V_GND V_SENSE transmission_gate_9/GN transmission_gate
+Xtransmission_gate_64 Reset V_HIGH V_GND V_SENSE transmission_gate_9/GN transmission_gate
+Xsky130_fd_sc_hd__dfbbn_1_6 V_GND V_LOW V_GND V_LOW FULL_COUNTER.COUNT_SUB_DFF11.Q
++ sky130_fd_sc_hd__dfbbn_1_6/Q_N sky130_fd_sc_hd__inv_16_40/Y sky130_fd_sc_hd__conb_1_10/HI
++ sky130_fd_sc_hd__inv_1_9/Y FULL_COUNTER.COUNT_SUB_DFF10.Q sky130_fd_sc_hd__dfbbn_1
+Xsky130_fd_sc_hd__inv_1_4 V_GND V_LOW V_GND V_LOW FULL_COUNTER.COUNT_SUB_DFF5.Q sky130_fd_sc_hd__inv_1_4/Y
++ sky130_fd_sc_hd__inv_1
+Xsky130_fd_sc_hd__inv_1_15 V_GND V_LOW V_GND V_LOW FULL_COUNTER.COUNT_SUB_DFF17.Q
++ sky130_fd_sc_hd__inv_1_15/Y sky130_fd_sc_hd__inv_1
+Xsky130_fd_sc_hd__inv_1_48 V_GND V_LOW V_GND V_LOW Reset sky130_fd_sc_hd__inv_1_48/Y
++ sky130_fd_sc_hd__inv_1
+Xsky130_fd_sc_hd__inv_1_37 V_GND V_LOW V_GND V_LOW RISING_COUNTER.COUNT_SUB_DFF8.Q
++ sky130_fd_sc_hd__inv_1_37/Y sky130_fd_sc_hd__inv_1
+Xsky130_fd_sc_hd__inv_1_26 V_GND V_LOW V_GND V_LOW RISING_COUNTER.COUNT_SUB_DFF14.Q
++ sky130_fd_sc_hd__inv_1_26/Y sky130_fd_sc_hd__inv_1
+Xsky130_fd_sc_hd__inv_1_59 V_GND V_LOW V_GND V_LOW FALLING_COUNTER.COUNT_SUB_DFF9.Q
++ sky130_fd_sc_hd__inv_1_59/Y sky130_fd_sc_hd__inv_1
+Xsky130_fd_sc_hd__inv_16_4 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__inv_16_4/Y sky130_fd_sc_hd__inv_8_0/Y
++ sky130_fd_sc_hd__inv_16
+Xsky130_fd_sc_hd__nand2_8_3 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__inv_1_67/Y sky130_fd_sc_hd__inv_1_64/A
++ sky130_fd_sc_hd__inv_1_65/A sky130_fd_sc_hd__nand2_8
+Xtransmission_gate_32 Reset V_HIGH V_GND V_SENSE transmission_gate_9/GN transmission_gate
+Xtransmission_gate_10 Reset V_HIGH V_GND V_SENSE transmission_gate_9/GN transmission_gate
+Xtransmission_gate_21 Reset V_HIGH V_GND V_SENSE transmission_gate_9/GN transmission_gate
+Xtransmission_gate_43 Reset V_HIGH V_GND V_SENSE transmission_gate_9/GN transmission_gate
+Xtransmission_gate_65 Reset V_HIGH V_GND V_SENSE transmission_gate_9/GN transmission_gate
+Xtransmission_gate_54 Reset V_HIGH V_GND V_SENSE transmission_gate_9/GN transmission_gate
+Xtransmission_gate_76 Reset V_HIGH V_GND V_SENSE transmission_gate_9/GN transmission_gate
+Xsky130_fd_sc_hd__dfbbn_1_7 V_GND V_LOW V_GND V_LOW FULL_COUNTER.COUNT_SUB_DFF8.Q
++ sky130_fd_sc_hd__dfbbn_1_7/Q_N sky130_fd_sc_hd__inv_16_40/Y sky130_fd_sc_hd__conb_1_5/HI
++ sky130_fd_sc_hd__inv_1_10/Y FULL_COUNTER.COUNT_SUB_DFF7.Q sky130_fd_sc_hd__dfbbn_1
+Xsky130_fd_sc_hd__inv_1_5 V_GND V_LOW V_GND V_LOW FULL_COUNTER.COUNT_SUB_DFF13.Q sky130_fd_sc_hd__inv_1_5/Y
++ sky130_fd_sc_hd__inv_1
+Xsky130_fd_sc_hd__inv_1_16 V_GND V_LOW V_GND V_LOW FULL_COUNTER.COUNT_SUB_DFF19.Q
++ sky130_fd_sc_hd__inv_1_16/Y sky130_fd_sc_hd__inv_1
+Xsky130_fd_sc_hd__inv_1_27 V_GND V_LOW V_GND V_LOW RISING_COUNTER.COUNT_SUB_DFF15.Q
++ sky130_fd_sc_hd__inv_1_27/Y sky130_fd_sc_hd__inv_1
+Xsky130_fd_sc_hd__inv_1_49 V_GND V_LOW V_GND V_LOW RISING_COUNTER.COUNT_SUB_DFF2.Q
++ sky130_fd_sc_hd__inv_1_49/Y sky130_fd_sc_hd__inv_1
+Xsky130_fd_sc_hd__inv_1_38 V_GND V_LOW V_GND V_LOW RISING_COUNTER.COUNT_SUB_DFF10.Q
++ sky130_fd_sc_hd__inv_1_38/Y sky130_fd_sc_hd__inv_1
+Xsky130_fd_sc_hd__inv_16_5 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__inv_1_19/A sky130_fd_sc_hd__inv_16_5/A
++ sky130_fd_sc_hd__inv_16
+Xsky130_fd_sc_hd__nand2_8_4 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__inv_1_48/Y sky130_fd_sc_hd__nand2_8_4/Y
++ CLOCK_GEN.SR_Op.Q sky130_fd_sc_hd__nand2_8
+Xtransmission_gate_22 Reset V_HIGH V_GND V_SENSE transmission_gate_9/GN transmission_gate
+Xtransmission_gate_11 Reset V_HIGH V_GND V_SENSE transmission_gate_9/GN transmission_gate
+Xtransmission_gate_44 Reset V_HIGH V_GND V_SENSE transmission_gate_9/GN transmission_gate
+Xtransmission_gate_33 Reset V_HIGH V_GND V_SENSE transmission_gate_9/GN transmission_gate
+Xtransmission_gate_55 Reset V_HIGH V_GND V_SENSE transmission_gate_9/GN transmission_gate
+Xtransmission_gate_66 Reset V_HIGH V_GND V_SENSE transmission_gate_9/GN transmission_gate
+Xtransmission_gate_77 Reset V_HIGH V_GND V_SENSE transmission_gate_9/GN transmission_gate
+Xsky130_fd_sc_hd__dfbbn_1_8 V_GND V_LOW V_GND V_LOW FULL_COUNTER.COUNT_SUB_DFF12.Q
++ sky130_fd_sc_hd__dfbbn_1_8/Q_N sky130_fd_sc_hd__inv_16_40/Y sky130_fd_sc_hd__conb_1_8/HI
++ sky130_fd_sc_hd__inv_1_8/Y FULL_COUNTER.COUNT_SUB_DFF11.Q sky130_fd_sc_hd__dfbbn_1
+Xsky130_fd_sc_hd__inv_1_6 V_GND V_LOW V_GND V_LOW FULL_COUNTER.COUNT_SUB_DFF14.Q sky130_fd_sc_hd__inv_1_6/Y
++ sky130_fd_sc_hd__inv_1
+Xsky130_fd_sc_hd__inv_1_17 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__inv_1_19/A sky130_fd_sc_hd__inv_1_67/A
++ sky130_fd_sc_hd__inv_1
+Xsky130_fd_sc_hd__inv_1_39 V_GND V_LOW V_GND V_LOW RISING_COUNTER.COUNT_SUB_DFF3.Q
++ sky130_fd_sc_hd__inv_1_39/Y sky130_fd_sc_hd__inv_1
+Xsky130_fd_sc_hd__inv_1_28 V_GND V_LOW V_GND V_LOW RISING_COUNTER.COUNT_SUB_DFF12.Q
++ sky130_fd_sc_hd__inv_1_28/Y sky130_fd_sc_hd__inv_1
+Xsky130_fd_sc_hd__inv_16_6 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__inv_16_6/Y sky130_fd_sc_hd__inv_16_6/A
++ sky130_fd_sc_hd__inv_16
+Xsky130_fd_sc_hd__nand2_8_5 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__inv_1_56/Y sky130_fd_sc_hd__inv_1_53/A
++ sky130_fd_sc_hd__inv_1_52/A sky130_fd_sc_hd__nand2_8
+Xsky130_fd_sc_hd__inv_8_0 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__inv_8_0/Y sky130_fd_sc_hd__inv_8_0/A
++ sky130_fd_sc_hd__inv_8
+Xtransmission_gate_23 Reset V_HIGH V_GND V_SENSE transmission_gate_9/GN transmission_gate
+Xtransmission_gate_12 Reset V_HIGH V_GND V_SENSE transmission_gate_9/GN transmission_gate
+Xtransmission_gate_45 Reset V_HIGH V_GND V_SENSE transmission_gate_9/GN transmission_gate
+Xtransmission_gate_34 Reset V_HIGH V_GND V_SENSE transmission_gate_9/GN transmission_gate
+Xtransmission_gate_56 Reset V_HIGH V_GND V_SENSE transmission_gate_9/GN transmission_gate
+Xtransmission_gate_67 Reset V_HIGH V_GND V_SENSE transmission_gate_9/GN transmission_gate
+Xtransmission_gate_78 Reset V_HIGH V_GND V_SENSE transmission_gate_9/GN transmission_gate
+Xsky130_fd_sc_hd__dfbbn_1_9 V_GND V_LOW V_GND V_LOW FULL_COUNTER.COUNT_SUB_DFF10.Q
++ sky130_fd_sc_hd__dfbbn_1_9/Q_N sky130_fd_sc_hd__inv_16_40/Y sky130_fd_sc_hd__conb_1_6/HI
++ sky130_fd_sc_hd__inv_1_7/Y FULL_COUNTER.COUNT_SUB_DFF9.Q sky130_fd_sc_hd__dfbbn_1
+Xsky130_fd_sc_hd__inv_1_7 V_GND V_LOW V_GND V_LOW FULL_COUNTER.COUNT_SUB_DFF10.Q sky130_fd_sc_hd__inv_1_7/Y
++ sky130_fd_sc_hd__inv_1
+Xsky130_fd_sc_hd__inv_1_18 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__inv_1_18/A sky130_fd_sc_hd__inv_1_18/Y
++ sky130_fd_sc_hd__inv_1
+Xsky130_fd_sc_hd__inv_1_29 V_GND V_LOW V_GND V_LOW FALLING_COUNTER.COUNT_SUB_DFF12.Q
++ sky130_fd_sc_hd__inv_1_29/Y sky130_fd_sc_hd__inv_1
+Xsky130_fd_sc_hd__inv_16_7 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__inv_16_7/Y sky130_fd_sc_hd__inv_16_7/A
++ sky130_fd_sc_hd__inv_16
+Xsky130_fd_sc_hd__nand2_8_6 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__inv_1_51/Y sky130_fd_sc_hd__inv_1_52/A
++ sky130_fd_sc_hd__inv_1_53/A sky130_fd_sc_hd__nand2_8
+Xtransmission_gate_13 Reset V_HIGH V_GND V_SENSE transmission_gate_9/GN transmission_gate
+Xtransmission_gate_46 Reset V_HIGH V_GND V_SENSE transmission_gate_9/GN transmission_gate
+Xtransmission_gate_24 Reset V_HIGH V_GND V_SENSE transmission_gate_9/GN transmission_gate
+Xtransmission_gate_57 Reset V_HIGH V_GND V_SENSE transmission_gate_9/GN transmission_gate
+Xtransmission_gate_35 Reset V_HIGH V_GND V_SENSE transmission_gate_9/GN transmission_gate
+Xtransmission_gate_79 Reset V_HIGH V_GND V_SENSE transmission_gate_9/GN transmission_gate
+Xtransmission_gate_68 Reset V_HIGH V_GND V_SENSE transmission_gate_9/GN transmission_gate
+Xsky130_fd_sc_hd__inv_1_8 V_GND V_LOW V_GND V_LOW FULL_COUNTER.COUNT_SUB_DFF12.Q sky130_fd_sc_hd__inv_1_8/Y
++ sky130_fd_sc_hd__inv_1
+Xsky130_fd_sc_hd__inv_1_19 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__inv_1_19/A sky130_fd_sc_hd__inv_1_19/Y
++ sky130_fd_sc_hd__inv_1
+Xsky130_fd_sc_hd__inv_16_50 V_GND V_SENSE V_GND V_SENSE sky130_fd_sc_hd__inv_16_50/Y
++ sky130_fd_sc_hd__inv_16_50/A sky130_fd_sc_hd__inv_16
+Xsky130_fd_sc_hd__inv_16_8 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__inv_16_8/Y sky130_fd_sc_hd__inv_16_8/A
++ sky130_fd_sc_hd__inv_16
+Xsky130_fd_sc_hd__nand2_8_7 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__inv_1_66/Y sky130_fd_sc_hd__inv_1_65/A
++ sky130_fd_sc_hd__inv_1_64/A sky130_fd_sc_hd__nand2_8
+Xtransmission_gate_14 Reset V_HIGH V_GND V_SENSE transmission_gate_9/GN transmission_gate
+Xtransmission_gate_47 Reset V_HIGH V_GND V_SENSE transmission_gate_9/GN transmission_gate
+Xtransmission_gate_36 Reset V_HIGH V_GND V_SENSE transmission_gate_9/GN transmission_gate
+Xtransmission_gate_25 Reset V_HIGH V_GND V_SENSE transmission_gate_9/GN transmission_gate
+Xtransmission_gate_58 Reset V_HIGH V_GND V_SENSE transmission_gate_9/GN transmission_gate
+Xtransmission_gate_69 Reset V_HIGH V_GND V_SENSE transmission_gate_9/GN transmission_gate
+Xsky130_fd_sc_hd__inv_1_9 V_GND V_LOW V_GND V_LOW FULL_COUNTER.COUNT_SUB_DFF11.Q sky130_fd_sc_hd__inv_1_9/Y
++ sky130_fd_sc_hd__inv_1
+Xsky130_fd_sc_hd__nor2_1_0 V_GND V_LOW V_GND V_LOW Reset CLOCK_GEN.SR_Op.Q sky130_fd_sc_hd__nor2_1_0/Y
++ sky130_fd_sc_hd__nor2_1
+Xsky130_fd_sc_hd__inv_16_40 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__inv_16_40/Y Reset
++ sky130_fd_sc_hd__inv_16
+Xsky130_fd_sc_hd__inv_16_51 V_GND V_SENSE V_GND V_SENSE sky130_fd_sc_hd__inv_16_51/Y
++ sky130_fd_sc_hd__inv_16_51/A sky130_fd_sc_hd__inv_16
+Xsky130_fd_sc_hd__inv_16_9 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__inv_16_9/Y sky130_fd_sc_hd__inv_16_9/A
++ sky130_fd_sc_hd__inv_16
+Xsky130_fd_sc_hd__nand2_8_8 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__nand2_8_8/A sky130_fd_sc_hd__inv_1_47/A
++ sky130_fd_sc_hd__nand2_8_9/Y sky130_fd_sc_hd__nand2_8
+Xtransmission_gate_37 Reset V_HIGH V_GND V_SENSE transmission_gate_9/GN transmission_gate
+Xtransmission_gate_26 Reset V_HIGH V_GND V_SENSE transmission_gate_9/GN transmission_gate
+Xtransmission_gate_15 Reset V_HIGH V_GND V_SENSE transmission_gate_9/GN transmission_gate
+Xtransmission_gate_48 Reset V_HIGH V_GND V_SENSE transmission_gate_9/GN transmission_gate
+Xtransmission_gate_59 Reset V_HIGH V_GND V_SENSE transmission_gate_9/GN transmission_gate
+Xsky130_fd_sc_hd__inv_16_30 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__inv_16_7/A sky130_fd_sc_hd__inv_16_31/Y
++ sky130_fd_sc_hd__inv_16
+Xsky130_fd_sc_hd__inv_16_52 V_GND V_SENSE V_GND V_SENSE sky130_fd_sc_hd__inv_1_46/A
++ sky130_fd_sc_hd__inv_16_52/A sky130_fd_sc_hd__inv_16
+Xsky130_fd_sc_hd__inv_16_41 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__inv_16_41/Y Reset
++ sky130_fd_sc_hd__inv_16
+Xsky130_fd_sc_hd__nand2_8_9 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__nand2_8_9/A sky130_fd_sc_hd__nand2_8_9/Y
++ sky130_fd_sc_hd__inv_1_47/A sky130_fd_sc_hd__nand2_8
+Xtransmission_gate_38 Reset V_HIGH V_GND V_SENSE transmission_gate_9/GN transmission_gate
+Xtransmission_gate_16 Reset V_HIGH V_GND V_SENSE transmission_gate_9/GN transmission_gate
+Xtransmission_gate_27 Reset V_HIGH V_GND V_SENSE transmission_gate_9/GN transmission_gate
+Xtransmission_gate_49 Reset V_HIGH V_GND V_SENSE transmission_gate_9/GN transmission_gate
+Xsky130_fd_sc_hd__inv_16_31 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__inv_16_31/Y sky130_fd_sc_hd__inv_1_67/A
++ sky130_fd_sc_hd__inv_16
+Xsky130_fd_sc_hd__inv_16_20 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__inv_16_23/A sky130_fd_sc_hd__inv_16_20/A
++ sky130_fd_sc_hd__inv_16
+Xsky130_fd_sc_hd__inv_16_53 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__inv_16_2/Y sky130_fd_sc_hd__inv_16_4/Y
++ sky130_fd_sc_hd__inv_16
+Xsky130_fd_sc_hd__inv_16_42 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__inv_16_42/Y Reset
++ sky130_fd_sc_hd__inv_16
+Xtransmission_gate_28 Reset V_HIGH V_GND V_SENSE transmission_gate_9/GN transmission_gate
+Xtransmission_gate_17 Reset V_HIGH V_GND V_SENSE transmission_gate_9/GN transmission_gate
+Xtransmission_gate_39 Reset V_HIGH V_GND V_SENSE transmission_gate_9/GN transmission_gate
+Xsky130_fd_sc_hd__inv_16_10 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__inv_16_8/A sky130_fd_sc_hd__inv_16_28/Y
++ sky130_fd_sc_hd__inv_16
+Xsky130_fd_sc_hd__inv_16_21 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__inv_16_22/A sky130_fd_sc_hd__inv_16_27/Y
++ sky130_fd_sc_hd__inv_16
+Xsky130_fd_sc_hd__inv_16_54 V_GND V_HIGH V_GND V_HIGH sky130_fd_sc_hd__inv_16_6/A
++ sky130_fd_sc_hd__inv_16_2/Y sky130_fd_sc_hd__inv_16
+Xsky130_fd_sc_hd__inv_16_32 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__inv_16_32/Y sky130_fd_sc_hd__inv_16_32/A
++ sky130_fd_sc_hd__inv_16
+Xsky130_fd_sc_hd__inv_16_43 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__inv_1_56/A sky130_fd_sc_hd__inv_1_24/A
++ sky130_fd_sc_hd__inv_16
+Xsky130_fd_sc_hd__dfbbn_1_50 V_GND V_LOW V_GND V_LOW RISING_COUNTER.COUNT_SUB_DFF10.Q
++ sky130_fd_sc_hd__dfbbn_1_50/Q_N sky130_fd_sc_hd__inv_16_41/Y sky130_fd_sc_hd__conb_1_30/HI
++ sky130_fd_sc_hd__inv_1_38/Y RISING_COUNTER.COUNT_SUB_DFF9.Q sky130_fd_sc_hd__dfbbn_1
+Xtransmission_gate_18 Reset V_HIGH V_GND V_SENSE transmission_gate_9/GN transmission_gate
+Xtransmission_gate_29 Reset V_HIGH V_GND V_SENSE transmission_gate_9/GN transmission_gate
+Xsky130_fd_sc_hd__inv_4_0 V_GND V_LOW V_LOW V_GND sky130_fd_sc_hd__inv_8_0/A sky130_fd_sc_hd__inv_4_0/A
++ sky130_fd_sc_hd__inv_4
+Xsky130_fd_sc_hd__inv_16_11 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__inv_16_9/A sky130_fd_sc_hd__inv_16_6/Y
++ sky130_fd_sc_hd__inv_16
+Xsky130_fd_sc_hd__inv_16_22 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__inv_16_26/A sky130_fd_sc_hd__inv_16_22/A
++ sky130_fd_sc_hd__inv_16
+Xsky130_fd_sc_hd__inv_16_55 V_GND V_SENSE V_GND V_SENSE sky130_fd_sc_hd__inv_16_55/Y
++ sky130_fd_sc_hd__inv_16_55/A sky130_fd_sc_hd__inv_16
+Xsky130_fd_sc_hd__inv_16_44 V_GND V_SENSE V_GND V_SENSE sky130_fd_sc_hd__inv_16_44/Y
++ sky130_fd_sc_hd__inv_16_44/A sky130_fd_sc_hd__inv_16
+Xsky130_fd_sc_hd__inv_16_33 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__inv_16_33/Y sky130_fd_sc_hd__inv_16_9/Y
++ sky130_fd_sc_hd__inv_16
+Xsky130_fd_sc_hd__dfbbn_1_40 V_GND V_LOW V_GND V_LOW FALLING_COUNTER.COUNT_SUB_DFF7.Q
++ sky130_fd_sc_hd__dfbbn_1_40/Q_N sky130_fd_sc_hd__inv_16_42/Y sky130_fd_sc_hd__conb_1_44/HI
++ sky130_fd_sc_hd__inv_1_60/Y FALLING_COUNTER.COUNT_SUB_DFF6.Q sky130_fd_sc_hd__dfbbn_1
+Xsky130_fd_sc_hd__dfbbn_1_51 V_GND V_LOW V_GND V_LOW FALLING_COUNTER.COUNT_SUB_DFF9.Q
++ sky130_fd_sc_hd__dfbbn_1_51/Q_N sky130_fd_sc_hd__inv_16_42/Y sky130_fd_sc_hd__conb_1_48/HI
++ sky130_fd_sc_hd__inv_1_59/Y FALLING_COUNTER.COUNT_SUB_DFF8.Q sky130_fd_sc_hd__dfbbn_1
+Xtransmission_gate_19 Reset V_HIGH V_GND V_SENSE transmission_gate_9/GN transmission_gate
+Xsky130_fd_sc_hd__inv_16_12 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__inv_16_15/A sky130_fd_sc_hd__inv_16_14/Y
++ sky130_fd_sc_hd__inv_16
+Xsky130_fd_sc_hd__inv_16_45 V_GND V_SENSE V_GND V_SENSE sky130_fd_sc_hd__inv_16_55/A
++ sky130_fd_sc_hd__inv_16_45/A sky130_fd_sc_hd__inv_16
+Xsky130_fd_sc_hd__inv_16_34 V_GND V_SENSE V_GND V_SENSE sky130_fd_sc_hd__inv_16_49/A
++ sky130_fd_sc_hd__inv_16_47/Y sky130_fd_sc_hd__inv_16
+Xsky130_fd_sc_hd__inv_16_56 V_GND V_HIGH V_GND V_HIGH sky130_fd_sc_hd__inv_16_6/A
++ sky130_fd_sc_hd__inv_16_2/Y sky130_fd_sc_hd__inv_16
+Xsky130_fd_sc_hd__inv_16_23 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__inv_16_23/Y sky130_fd_sc_hd__inv_16_23/A
++ sky130_fd_sc_hd__inv_16
+Xsky130_fd_sc_hd__dfbbn_1_30 V_GND V_LOW V_GND V_LOW RISING_COUNTER.COUNT_SUB_DFF9.Q
++ sky130_fd_sc_hd__dfbbn_1_30/Q_N sky130_fd_sc_hd__inv_16_41/Y sky130_fd_sc_hd__conb_1_28/HI
++ sky130_fd_sc_hd__inv_1_40/Y RISING_COUNTER.COUNT_SUB_DFF8.Q sky130_fd_sc_hd__dfbbn_1
+Xsky130_fd_sc_hd__dfbbn_1_41 V_GND V_LOW V_GND V_LOW FALLING_COUNTER.COUNT_SUB_DFF5.Q
++ sky130_fd_sc_hd__dfbbn_1_41/Q_N sky130_fd_sc_hd__inv_16_42/Y sky130_fd_sc_hd__conb_1_47/HI
++ sky130_fd_sc_hd__inv_1_57/Y FALLING_COUNTER.COUNT_SUB_DFF4.Q sky130_fd_sc_hd__dfbbn_1
+Xsky130_fd_sc_hd__inv_16_13 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__inv_16_32/A sky130_fd_sc_hd__inv_16_15/Y
++ sky130_fd_sc_hd__inv_16
+Xsky130_fd_sc_hd__inv_16_35 V_GND V_SENSE V_GND V_SENSE sky130_fd_sc_hd__inv_16_51/A
++ sky130_fd_sc_hd__inv_16_48/Y sky130_fd_sc_hd__inv_16
+Xsky130_fd_sc_hd__inv_16_46 V_GND V_SENSE V_GND V_SENSE sky130_fd_sc_hd__inv_16_52/A
++ sky130_fd_sc_hd__inv_16_55/Y sky130_fd_sc_hd__inv_16
+Xsky130_fd_sc_hd__inv_16_24 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__inv_16_24/Y sky130_fd_sc_hd__inv_16_26/Y
++ sky130_fd_sc_hd__inv_16
+Xsky130_fd_sc_hd__dfbbn_1_20 V_GND V_LOW V_GND V_LOW RISING_COUNTER.COUNT_SUB_DFF15.Q
++ sky130_fd_sc_hd__dfbbn_1_20/Q_N sky130_fd_sc_hd__inv_16_41/Y sky130_fd_sc_hd__conb_1_18/HI
++ sky130_fd_sc_hd__inv_1_27/Y RISING_COUNTER.COUNT_SUB_DFF14.Q sky130_fd_sc_hd__dfbbn_1
+Xsky130_fd_sc_hd__dfbbn_1_31 V_GND V_LOW V_GND V_LOW RISING_COUNTER.COUNT_SUB_DFF7.Q
++ sky130_fd_sc_hd__dfbbn_1_31/Q_N sky130_fd_sc_hd__inv_16_41/Y sky130_fd_sc_hd__conb_1_34/HI
++ sky130_fd_sc_hd__inv_1_35/Y RISING_COUNTER.COUNT_SUB_DFF6.Q sky130_fd_sc_hd__dfbbn_1
+Xsky130_fd_sc_hd__dfbbn_1_42 V_GND V_LOW V_GND V_LOW FALLING_COUNTER.COUNT_SUB_DFF6.Q
++ sky130_fd_sc_hd__dfbbn_1_42/Q_N sky130_fd_sc_hd__inv_16_42/Y sky130_fd_sc_hd__conb_1_49/HI
++ sky130_fd_sc_hd__inv_1_63/Y FALLING_COUNTER.COUNT_SUB_DFF5.Q sky130_fd_sc_hd__dfbbn_1
+Xsky130_fd_sc_hd__inv_16_47 V_GND V_SENSE V_GND V_SENSE sky130_fd_sc_hd__inv_16_47/Y
++ sky130_fd_sc_hd__inv_16_6/A sky130_fd_sc_hd__inv_16
+Xsky130_fd_sc_hd__inv_16_36 V_GND V_SENSE V_GND V_SENSE sky130_fd_sc_hd__inv_16_44/A
++ sky130_fd_sc_hd__inv_16_50/Y sky130_fd_sc_hd__inv_16
+Xsky130_fd_sc_hd__inv_16_14 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__inv_16_14/Y sky130_fd_sc_hd__inv_16_16/Y
++ sky130_fd_sc_hd__inv_16
+Xsky130_fd_sc_hd__inv_16_25 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__inv_16_29/A sky130_fd_sc_hd__inv_16_7/Y
++ sky130_fd_sc_hd__inv_16
+Xsky130_fd_sc_hd__inv_2_0 V_GND V_LOW V_LOW V_GND sky130_fd_sc_hd__inv_4_0/A sky130_fd_sc_hd__inv_2_0/A
++ sky130_fd_sc_hd__inv_2
+Xsky130_fd_sc_hd__dfbbn_1_10 V_GND V_LOW V_GND V_LOW FULL_COUNTER.COUNT_SUB_DFF17.Q
++ sky130_fd_sc_hd__dfbbn_1_10/Q_N sky130_fd_sc_hd__inv_16_40/Y sky130_fd_sc_hd__conb_1_13/HI
++ sky130_fd_sc_hd__inv_1_15/Y FULL_COUNTER.COUNT_SUB_DFF16.Q sky130_fd_sc_hd__dfbbn_1
+Xsky130_fd_sc_hd__dfbbn_1_32 V_GND V_LOW V_GND V_LOW RISING_COUNTER.COUNT_SUB_DFF5.Q
++ sky130_fd_sc_hd__dfbbn_1_32/Q_N sky130_fd_sc_hd__inv_16_41/Y sky130_fd_sc_hd__conb_1_29/HI
++ sky130_fd_sc_hd__inv_1_34/Y RISING_COUNTER.COUNT_SUB_DFF4.Q sky130_fd_sc_hd__dfbbn_1
+Xsky130_fd_sc_hd__dfbbn_1_21 V_GND V_LOW V_GND V_LOW FALLING_COUNTER.COUNT_SUB_DFF12.Q
++ sky130_fd_sc_hd__dfbbn_1_21/Q_N sky130_fd_sc_hd__inv_16_42/Y sky130_fd_sc_hd__conb_1_22/HI
++ sky130_fd_sc_hd__inv_1_29/Y FALLING_COUNTER.COUNT_SUB_DFF11.Q sky130_fd_sc_hd__dfbbn_1
+Xsky130_fd_sc_hd__dfbbn_1_43 V_GND V_LOW V_GND V_LOW FALLING_COUNTER.COUNT_SUB_DFF4.Q
++ sky130_fd_sc_hd__dfbbn_1_43/Q_N sky130_fd_sc_hd__inv_16_42/Y sky130_fd_sc_hd__conb_1_46/HI
++ sky130_fd_sc_hd__inv_1_62/Y FALLING_COUNTER.COUNT_SUB_DFF3.Q sky130_fd_sc_hd__dfbbn_1
+Xtransmission_gate_0 Reset V_HIGH V_GND V_SENSE transmission_gate_9/GN transmission_gate
+Xsky130_fd_sc_hd__inv_16_37 V_GND V_SENSE V_GND V_SENSE sky130_fd_sc_hd__inv_16_48/A
++ sky130_fd_sc_hd__inv_16_49/Y sky130_fd_sc_hd__inv_16
+Xsky130_fd_sc_hd__inv_16_15 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__inv_16_15/Y sky130_fd_sc_hd__inv_16_15/A
++ sky130_fd_sc_hd__inv_16
+Xsky130_fd_sc_hd__inv_16_26 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__inv_16_26/Y sky130_fd_sc_hd__inv_16_26/A
++ sky130_fd_sc_hd__inv_16
+Xsky130_fd_sc_hd__inv_16_48 V_GND V_SENSE V_GND V_SENSE sky130_fd_sc_hd__inv_16_48/Y
++ sky130_fd_sc_hd__inv_16_48/A sky130_fd_sc_hd__inv_16
+Xsky130_fd_sc_hd__dfbbn_1_11 V_GND V_LOW V_GND V_LOW FULL_COUNTER.COUNT_SUB_DFF18.Q
++ sky130_fd_sc_hd__dfbbn_1_11/Q_N sky130_fd_sc_hd__inv_16_40/Y sky130_fd_sc_hd__conb_1_14/HI
++ sky130_fd_sc_hd__inv_1_13/Y FULL_COUNTER.COUNT_SUB_DFF17.Q sky130_fd_sc_hd__dfbbn_1
+Xsky130_fd_sc_hd__dfbbn_1_33 V_GND V_LOW V_GND V_LOW RISING_COUNTER.COUNT_SUB_DFF4.Q
++ sky130_fd_sc_hd__dfbbn_1_33/Q_N sky130_fd_sc_hd__inv_16_41/Y sky130_fd_sc_hd__conb_1_27/HI
++ sky130_fd_sc_hd__inv_1_36/Y RISING_COUNTER.COUNT_SUB_DFF3.Q sky130_fd_sc_hd__dfbbn_1
+Xsky130_fd_sc_hd__dfbbn_1_22 V_GND V_LOW V_GND V_LOW FALLING_COUNTER.COUNT_SUB_DFF14.Q
++ sky130_fd_sc_hd__dfbbn_1_22/Q_N sky130_fd_sc_hd__inv_16_42/Y sky130_fd_sc_hd__conb_1_26/HI
++ sky130_fd_sc_hd__inv_1_31/Y FALLING_COUNTER.COUNT_SUB_DFF13.Q sky130_fd_sc_hd__dfbbn_1
+Xsky130_fd_sc_hd__dfbbn_1_44 V_GND V_LOW V_GND V_LOW RISING_COUNTER.COUNT_SUB_DFF3.Q
++ sky130_fd_sc_hd__dfbbn_1_44/Q_N sky130_fd_sc_hd__inv_16_41/Y sky130_fd_sc_hd__conb_1_33/HI
++ sky130_fd_sc_hd__inv_1_39/Y RISING_COUNTER.COUNT_SUB_DFF2.Q sky130_fd_sc_hd__dfbbn_1
+Xsky130_fd_sc_hd__conb_1_50 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__conb_1_50/LO
++ sky130_fd_sc_hd__conb_1_50/HI sky130_fd_sc_hd__conb_1
+Xtransmission_gate_1 Reset V_HIGH V_GND V_SENSE transmission_gate_9/GN transmission_gate
+Xsky130_fd_sc_hd__inv_16_38 V_GND V_SENSE V_GND V_SENSE sky130_fd_sc_hd__inv_16_45/A
++ sky130_fd_sc_hd__inv_16_44/Y sky130_fd_sc_hd__inv_16
+Xsky130_fd_sc_hd__inv_16_16 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__inv_16_16/Y sky130_fd_sc_hd__inv_16_33/Y
++ sky130_fd_sc_hd__inv_16
+Xsky130_fd_sc_hd__inv_16_27 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__inv_16_27/Y sky130_fd_sc_hd__inv_16_29/Y
++ sky130_fd_sc_hd__inv_16
+Xsky130_fd_sc_hd__inv_16_49 V_GND V_SENSE V_GND V_SENSE sky130_fd_sc_hd__inv_16_49/Y
++ sky130_fd_sc_hd__inv_16_49/A sky130_fd_sc_hd__inv_16
+Xsky130_fd_sc_hd__dfbbn_1_12 V_GND V_LOW V_GND V_LOW FULL_COUNTER.COUNT_SUB_DFF19.Q
++ sky130_fd_sc_hd__dfbbn_1_12/Q_N sky130_fd_sc_hd__inv_16_40/Y sky130_fd_sc_hd__conb_1_11/HI
++ sky130_fd_sc_hd__inv_1_16/Y FULL_COUNTER.COUNT_SUB_DFF18.Q sky130_fd_sc_hd__dfbbn_1
+Xsky130_fd_sc_hd__dfbbn_1_23 V_GND V_LOW V_GND V_LOW FALLING_COUNTER.COUNT_SUB_DFF10.Q
++ sky130_fd_sc_hd__dfbbn_1_23/Q_N sky130_fd_sc_hd__inv_16_42/Y sky130_fd_sc_hd__conb_1_50/HI
++ sky130_fd_sc_hd__inv_1_58/Y FALLING_COUNTER.COUNT_SUB_DFF9.Q sky130_fd_sc_hd__dfbbn_1
+Xsky130_fd_sc_hd__dfbbn_1_34 V_GND V_LOW V_GND V_LOW FULL_COUNTER.COUNT_SUB_DFF1.Q
++ sky130_fd_sc_hd__dfbbn_1_34/Q_N sky130_fd_sc_hd__inv_16_40/Y sky130_fd_sc_hd__conb_1_51/HI
++ sky130_fd_sc_hd__inv_1_42/Y FULL_COUNTER.COUNT_SUB_DFF0.Q sky130_fd_sc_hd__dfbbn_1
+Xsky130_fd_sc_hd__dfbbn_1_45 V_GND V_LOW V_GND V_LOW RISING_COUNTER.COUNT_SUB_DFF2.Q
++ sky130_fd_sc_hd__dfbbn_1_45/Q_N sky130_fd_sc_hd__inv_16_41/Y sky130_fd_sc_hd__conb_1_38/HI
++ sky130_fd_sc_hd__inv_1_49/Y RISING_COUNTER.COUNT_SUB_DFF1.Q sky130_fd_sc_hd__dfbbn_1
+Xsky130_fd_sc_hd__conb_1_40 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__conb_1_40/LO
++ sky130_fd_sc_hd__conb_1_40/HI sky130_fd_sc_hd__conb_1
+Xsky130_fd_sc_hd__conb_1_51 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__conb_1_51/LO
++ sky130_fd_sc_hd__conb_1_51/HI sky130_fd_sc_hd__conb_1
+Xtransmission_gate_2 Reset V_HIGH V_GND V_SENSE transmission_gate_9/GN transmission_gate
+Xsky130_fd_sc_hd__inv_16_28 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__inv_16_28/Y sky130_fd_sc_hd__inv_16_32/Y
++ sky130_fd_sc_hd__inv_16
+Xsky130_fd_sc_hd__inv_16_17 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__inv_16_20/A sky130_fd_sc_hd__inv_16_24/Y
++ sky130_fd_sc_hd__inv_16
+Xsky130_fd_sc_hd__inv_16_39 V_GND V_SENSE V_GND V_SENSE sky130_fd_sc_hd__inv_16_50/A
++ sky130_fd_sc_hd__inv_16_51/Y sky130_fd_sc_hd__inv_16
+Xsky130_fd_sc_hd__dfbbn_1_13 V_GND V_LOW V_GND V_LOW FULL_COUNTER.COUNT_SUB_DFF16.Q
++ sky130_fd_sc_hd__dfbbn_1_13/Q_N sky130_fd_sc_hd__inv_16_40/Y sky130_fd_sc_hd__conb_1_15/HI
++ sky130_fd_sc_hd__inv_1_12/Y FULL_COUNTER.COUNT_SUB_DFF15.Q sky130_fd_sc_hd__dfbbn_1
+Xsky130_fd_sc_hd__dfbbn_1_24 V_GND V_LOW V_GND V_LOW FALLING_COUNTER.COUNT_SUB_DFF15.Q
++ sky130_fd_sc_hd__dfbbn_1_24/Q_N sky130_fd_sc_hd__inv_16_42/Y sky130_fd_sc_hd__conb_1_23/HI
++ sky130_fd_sc_hd__inv_1_32/Y FALLING_COUNTER.COUNT_SUB_DFF14.Q sky130_fd_sc_hd__dfbbn_1
+Xsky130_fd_sc_hd__dfbbn_1_35 V_GND V_LOW V_GND V_LOW FULL_COUNTER.COUNT_SUB_DFF2.Q
++ sky130_fd_sc_hd__dfbbn_1_35/Q_N sky130_fd_sc_hd__inv_16_40/Y sky130_fd_sc_hd__conb_1_37/HI
++ sky130_fd_sc_hd__inv_1_22/Y FULL_COUNTER.COUNT_SUB_DFF1.Q sky130_fd_sc_hd__dfbbn_1
+Xsky130_fd_sc_hd__dfbbn_1_46 V_GND V_LOW V_GND V_LOW FALLING_COUNTER.COUNT_SUB_DFF2.Q
++ sky130_fd_sc_hd__dfbbn_1_46/Q_N sky130_fd_sc_hd__inv_16_42/Y sky130_fd_sc_hd__conb_1_41/HI
++ sky130_fd_sc_hd__inv_1_50/Y FALLING_COUNTER.COUNT_SUB_DFF1.Q sky130_fd_sc_hd__dfbbn_1
+Xsky130_fd_sc_hd__conb_1_30 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__conb_1_30/LO
++ sky130_fd_sc_hd__conb_1_30/HI sky130_fd_sc_hd__conb_1
+Xsky130_fd_sc_hd__conb_1_41 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__conb_1_41/LO
++ sky130_fd_sc_hd__conb_1_41/HI sky130_fd_sc_hd__conb_1
+Xsky130_fd_sc_hd__nand3_1_0 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__inv_1_23/Y sky130_fd_sc_hd__inv_1_20/Y
++ sky130_fd_sc_hd__nand3_1_0/Y sky130_fd_sc_hd__inv_1_47/A sky130_fd_sc_hd__nand3_1
+Xtransmission_gate_3 Reset V_HIGH V_GND V_SENSE transmission_gate_9/GN transmission_gate
+Xsky130_fd_sc_hd__inv_16_29 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__inv_16_29/Y sky130_fd_sc_hd__inv_16_29/A
++ sky130_fd_sc_hd__inv_16
+Xsky130_fd_sc_hd__inv_16_18 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__inv_1_24/A sky130_fd_sc_hd__inv_16_19/Y
++ sky130_fd_sc_hd__inv_16
+Xsky130_fd_sc_hd__dfbbn_1_14 V_GND V_LOW V_GND V_LOW FULL_COUNTER.COUNT_SUB_DFF14.Q
++ sky130_fd_sc_hd__dfbbn_1_14/Q_N sky130_fd_sc_hd__inv_16_40/Y sky130_fd_sc_hd__conb_1_16/HI
++ sky130_fd_sc_hd__inv_1_6/Y FULL_COUNTER.COUNT_SUB_DFF13.Q sky130_fd_sc_hd__dfbbn_1
+Xsky130_fd_sc_hd__dfbbn_1_36 V_GND V_LOW V_GND V_LOW FULL_COUNTER.COUNT_SUB_DFF0.Q
++ sky130_fd_sc_hd__dfbbn_1_36/Q_N sky130_fd_sc_hd__inv_16_40/Y sky130_fd_sc_hd__conb_1_35/HI
++ sky130_fd_sc_hd__inv_1_21/Y sky130_fd_sc_hd__inv_2_0/A sky130_fd_sc_hd__dfbbn_1
+Xsky130_fd_sc_hd__dfbbn_1_47 V_GND V_LOW V_GND V_LOW RISING_COUNTER.COUNT_SUB_DFF0.Q
++ sky130_fd_sc_hd__dfbbn_1_47/Q_N sky130_fd_sc_hd__inv_16_41/Y sky130_fd_sc_hd__conb_1_39/HI
++ sky130_fd_sc_hd__inv_1_45/Y sky130_fd_sc_hd__nand3_1_1/Y sky130_fd_sc_hd__dfbbn_1
+Xsky130_fd_sc_hd__dfbbn_1_25 V_GND V_LOW V_GND V_LOW FALLING_COUNTER.COUNT_SUB_DFF13.Q
++ sky130_fd_sc_hd__dfbbn_1_25/Q_N sky130_fd_sc_hd__inv_16_42/Y sky130_fd_sc_hd__conb_1_24/HI
++ sky130_fd_sc_hd__inv_1_33/Y FALLING_COUNTER.COUNT_SUB_DFF12.Q sky130_fd_sc_hd__dfbbn_1
+Xsky130_fd_sc_hd__conb_1_31 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__conb_1_31/LO
++ sky130_fd_sc_hd__conb_1_31/HI sky130_fd_sc_hd__conb_1
+Xsky130_fd_sc_hd__conb_1_20 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__conb_1_20/LO
++ sky130_fd_sc_hd__conb_1_20/HI sky130_fd_sc_hd__conb_1
+Xsky130_fd_sc_hd__conb_1_42 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__conb_1_42/LO
++ sky130_fd_sc_hd__conb_1_42/HI sky130_fd_sc_hd__conb_1
+Xsky130_fd_sc_hd__nand3_1_1 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__inv_1_64/Y sky130_fd_sc_hd__inv_1_66/Y
++ sky130_fd_sc_hd__nand3_1_1/Y sky130_fd_sc_hd__inv_1_47/Y sky130_fd_sc_hd__nand3_1
+Xtransmission_gate_4 Reset V_HIGH V_GND V_SENSE transmission_gate_9/GN transmission_gate
+Xsky130_fd_sc_hd__inv_16_19 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__inv_16_19/Y sky130_fd_sc_hd__inv_16_23/Y
++ sky130_fd_sc_hd__inv_16
+Xsky130_fd_sc_hd__dfbbn_1_15 V_GND V_LOW V_GND V_LOW FULL_COUNTER.COUNT_SUB_DFF15.Q
++ sky130_fd_sc_hd__dfbbn_1_15/Q_N sky130_fd_sc_hd__inv_16_40/Y sky130_fd_sc_hd__conb_1_12/HI
++ sky130_fd_sc_hd__inv_1_14/Y FULL_COUNTER.COUNT_SUB_DFF14.Q sky130_fd_sc_hd__dfbbn_1
+Xsky130_fd_sc_hd__dfbbn_1_37 V_GND V_LOW V_GND V_LOW RISING_COUNTER.COUNT_SUB_DFF1.Q
++ sky130_fd_sc_hd__dfbbn_1_37/Q_N sky130_fd_sc_hd__inv_16_41/Y sky130_fd_sc_hd__conb_1_36/HI
++ sky130_fd_sc_hd__inv_1_43/Y RISING_COUNTER.COUNT_SUB_DFF0.Q sky130_fd_sc_hd__dfbbn_1
+Xsky130_fd_sc_hd__dfbbn_1_48 V_GND V_LOW V_GND V_LOW FALLING_COUNTER.COUNT_SUB_DFF3.Q
++ sky130_fd_sc_hd__dfbbn_1_48/Q_N sky130_fd_sc_hd__inv_16_42/Y sky130_fd_sc_hd__conb_1_43/HI
++ sky130_fd_sc_hd__inv_1_68/Y FALLING_COUNTER.COUNT_SUB_DFF2.Q sky130_fd_sc_hd__dfbbn_1
+Xsky130_fd_sc_hd__dfbbn_1_26 V_GND V_LOW V_GND V_LOW FALLING_COUNTER.COUNT_SUB_DFF11.Q
++ sky130_fd_sc_hd__dfbbn_1_26/Q_N sky130_fd_sc_hd__inv_16_42/Y sky130_fd_sc_hd__conb_1_25/HI
++ sky130_fd_sc_hd__inv_1_30/Y FALLING_COUNTER.COUNT_SUB_DFF10.Q sky130_fd_sc_hd__dfbbn_1
+Xsky130_fd_sc_hd__conb_1_10 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__conb_1_10/LO
++ sky130_fd_sc_hd__conb_1_10/HI sky130_fd_sc_hd__conb_1
+Xsky130_fd_sc_hd__conb_1_21 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__conb_1_21/LO
++ sky130_fd_sc_hd__conb_1_21/HI sky130_fd_sc_hd__conb_1
+Xsky130_fd_sc_hd__conb_1_32 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__conb_1_32/LO
++ sky130_fd_sc_hd__conb_1_32/HI sky130_fd_sc_hd__conb_1
+Xsky130_fd_sc_hd__conb_1_43 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__conb_1_43/LO
++ sky130_fd_sc_hd__conb_1_43/HI sky130_fd_sc_hd__conb_1
+Xsky130_fd_sc_hd__nand3_1_2 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__inv_1_53/Y sky130_fd_sc_hd__inv_1_51/Y
++ sky130_fd_sc_hd__nand3_1_2/Y sky130_fd_sc_hd__inv_1_47/Y sky130_fd_sc_hd__nand3_1
+Xtransmission_gate_5 Reset V_HIGH V_GND V_SENSE transmission_gate_9/GN transmission_gate
+Xsky130_fd_sc_hd__dfbbn_1_16 V_GND V_LOW V_GND V_LOW FULL_COUNTER.COUNT_SUB_DFF13.Q
++ sky130_fd_sc_hd__dfbbn_1_16/Q_N sky130_fd_sc_hd__inv_16_40/Y sky130_fd_sc_hd__conb_1_7/HI
++ sky130_fd_sc_hd__inv_1_5/Y FULL_COUNTER.COUNT_SUB_DFF12.Q sky130_fd_sc_hd__dfbbn_1
+Xsky130_fd_sc_hd__dfbbn_1_27 V_GND V_LOW V_GND V_LOW RISING_COUNTER.COUNT_SUB_DFF14.Q
++ sky130_fd_sc_hd__dfbbn_1_27/Q_N sky130_fd_sc_hd__inv_16_41/Y sky130_fd_sc_hd__conb_1_17/HI
++ sky130_fd_sc_hd__inv_1_26/Y RISING_COUNTER.COUNT_SUB_DFF13.Q sky130_fd_sc_hd__dfbbn_1
+Xsky130_fd_sc_hd__dfbbn_1_38 V_GND V_LOW V_GND V_LOW FALLING_COUNTER.COUNT_SUB_DFF1.Q
++ sky130_fd_sc_hd__dfbbn_1_38/Q_N sky130_fd_sc_hd__inv_16_42/Y sky130_fd_sc_hd__conb_1_40/HI
++ sky130_fd_sc_hd__inv_1_55/Y FALLING_COUNTER.COUNT_SUB_DFF0.Q sky130_fd_sc_hd__dfbbn_1
+Xsky130_fd_sc_hd__dfbbn_1_49 V_GND V_LOW V_GND V_LOW FALLING_COUNTER.COUNT_SUB_DFF8.Q
++ sky130_fd_sc_hd__dfbbn_1_49/Q_N sky130_fd_sc_hd__inv_16_42/Y sky130_fd_sc_hd__conb_1_45/HI
++ sky130_fd_sc_hd__inv_1_61/Y FALLING_COUNTER.COUNT_SUB_DFF7.Q sky130_fd_sc_hd__dfbbn_1
+Xsky130_fd_sc_hd__conb_1_11 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__conb_1_11/LO
++ sky130_fd_sc_hd__conb_1_11/HI sky130_fd_sc_hd__conb_1
+Xsky130_fd_sc_hd__conb_1_22 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__conb_1_22/LO
++ sky130_fd_sc_hd__conb_1_22/HI sky130_fd_sc_hd__conb_1
+Xsky130_fd_sc_hd__conb_1_33 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__conb_1_33/LO
++ sky130_fd_sc_hd__conb_1_33/HI sky130_fd_sc_hd__conb_1
+Xsky130_fd_sc_hd__conb_1_44 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__conb_1_44/LO
++ sky130_fd_sc_hd__conb_1_44/HI sky130_fd_sc_hd__conb_1
+Xtransmission_gate_6 Reset V_HIGH V_GND V_SENSE transmission_gate_9/GN transmission_gate
+Xsky130_fd_sc_hd__dfbbn_1_28 V_GND V_LOW V_GND V_LOW RISING_COUNTER.COUNT_SUB_DFF8.Q
++ sky130_fd_sc_hd__dfbbn_1_28/Q_N sky130_fd_sc_hd__inv_16_41/Y sky130_fd_sc_hd__conb_1_32/HI
++ sky130_fd_sc_hd__inv_1_37/Y RISING_COUNTER.COUNT_SUB_DFF7.Q sky130_fd_sc_hd__dfbbn_1
+Xsky130_fd_sc_hd__dfbbn_1_17 V_GND V_LOW V_GND V_LOW RISING_COUNTER.COUNT_SUB_DFF13.Q
++ sky130_fd_sc_hd__dfbbn_1_17/Q_N sky130_fd_sc_hd__inv_16_41/Y sky130_fd_sc_hd__conb_1_19/HI
++ sky130_fd_sc_hd__inv_1_25/Y RISING_COUNTER.COUNT_SUB_DFF12.Q sky130_fd_sc_hd__dfbbn_1
+Xsky130_fd_sc_hd__dfbbn_1_39 V_GND V_LOW V_GND V_LOW FALLING_COUNTER.COUNT_SUB_DFF0.Q
++ sky130_fd_sc_hd__dfbbn_1_39/Q_N sky130_fd_sc_hd__inv_16_42/Y sky130_fd_sc_hd__conb_1_42/HI
++ sky130_fd_sc_hd__inv_1_54/Y sky130_fd_sc_hd__nand3_1_0/Y sky130_fd_sc_hd__dfbbn_1
+Xsky130_fd_sc_hd__conb_1_12 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__conb_1_12/LO
++ sky130_fd_sc_hd__conb_1_12/HI sky130_fd_sc_hd__conb_1
+Xsky130_fd_sc_hd__conb_1_34 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__conb_1_34/LO
++ sky130_fd_sc_hd__conb_1_34/HI sky130_fd_sc_hd__conb_1
+Xsky130_fd_sc_hd__conb_1_45 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__conb_1_45/LO
++ sky130_fd_sc_hd__conb_1_45/HI sky130_fd_sc_hd__conb_1
+Xsky130_fd_sc_hd__conb_1_23 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__conb_1_23/LO
++ sky130_fd_sc_hd__conb_1_23/HI sky130_fd_sc_hd__conb_1
+Xtransmission_gate_7 Reset V_HIGH V_GND V_SENSE transmission_gate_9/GN transmission_gate
+Xsky130_fd_sc_hd__dfbbn_1_18 V_GND V_LOW V_GND V_LOW RISING_COUNTER.COUNT_SUB_DFF11.Q
++ sky130_fd_sc_hd__dfbbn_1_18/Q_N sky130_fd_sc_hd__inv_16_41/Y sky130_fd_sc_hd__conb_1_21/HI
++ sky130_fd_sc_hd__inv_1_69/Y RISING_COUNTER.COUNT_SUB_DFF10.Q sky130_fd_sc_hd__dfbbn_1
+Xsky130_fd_sc_hd__dfbbn_1_29 V_GND V_LOW V_GND V_LOW RISING_COUNTER.COUNT_SUB_DFF6.Q
++ sky130_fd_sc_hd__dfbbn_1_29/Q_N sky130_fd_sc_hd__inv_16_41/Y sky130_fd_sc_hd__conb_1_31/HI
++ sky130_fd_sc_hd__inv_1_41/Y RISING_COUNTER.COUNT_SUB_DFF5.Q sky130_fd_sc_hd__dfbbn_1
+Xsky130_fd_sc_hd__conb_1_13 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__conb_1_13/LO
++ sky130_fd_sc_hd__conb_1_13/HI sky130_fd_sc_hd__conb_1
+Xsky130_fd_sc_hd__conb_1_35 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__conb_1_35/LO
++ sky130_fd_sc_hd__conb_1_35/HI sky130_fd_sc_hd__conb_1
+Xsky130_fd_sc_hd__conb_1_24 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__conb_1_24/LO
++ sky130_fd_sc_hd__conb_1_24/HI sky130_fd_sc_hd__conb_1
+Xsky130_fd_sc_hd__conb_1_46 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__conb_1_46/LO
++ sky130_fd_sc_hd__conb_1_46/HI sky130_fd_sc_hd__conb_1
+Xtransmission_gate_8 Reset V_HIGH V_GND V_SENSE transmission_gate_9/GN transmission_gate
+Xsky130_fd_sc_hd__dfbbn_1_19 V_GND V_LOW V_GND V_LOW RISING_COUNTER.COUNT_SUB_DFF12.Q
++ sky130_fd_sc_hd__dfbbn_1_19/Q_N sky130_fd_sc_hd__inv_16_41/Y sky130_fd_sc_hd__conb_1_20/HI
++ sky130_fd_sc_hd__inv_1_28/Y RISING_COUNTER.COUNT_SUB_DFF11.Q sky130_fd_sc_hd__dfbbn_1
+Xsky130_fd_sc_hd__conb_1_14 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__conb_1_14/LO
++ sky130_fd_sc_hd__conb_1_14/HI sky130_fd_sc_hd__conb_1
+Xsky130_fd_sc_hd__conb_1_36 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__conb_1_36/LO
++ sky130_fd_sc_hd__conb_1_36/HI sky130_fd_sc_hd__conb_1
+Xsky130_fd_sc_hd__conb_1_25 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__conb_1_25/LO
++ sky130_fd_sc_hd__conb_1_25/HI sky130_fd_sc_hd__conb_1
+Xsky130_fd_sc_hd__conb_1_47 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__conb_1_47/LO
++ sky130_fd_sc_hd__conb_1_47/HI sky130_fd_sc_hd__conb_1
+Xtransmission_gate_9 Reset V_HIGH V_GND V_SENSE transmission_gate_9/GN transmission_gate
+Xsky130_fd_sc_hd__conb_1_15 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__conb_1_15/LO
++ sky130_fd_sc_hd__conb_1_15/HI sky130_fd_sc_hd__conb_1
+Xsky130_fd_sc_hd__conb_1_37 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__conb_1_37/LO
++ sky130_fd_sc_hd__conb_1_37/HI sky130_fd_sc_hd__conb_1
+Xsky130_fd_sc_hd__conb_1_26 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__conb_1_26/LO
++ sky130_fd_sc_hd__conb_1_26/HI sky130_fd_sc_hd__conb_1
+Xsky130_fd_sc_hd__conb_1_48 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__conb_1_48/LO
++ sky130_fd_sc_hd__conb_1_48/HI sky130_fd_sc_hd__conb_1
+Xsky130_fd_sc_hd__conb_1_16 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__conb_1_16/LO
++ sky130_fd_sc_hd__conb_1_16/HI sky130_fd_sc_hd__conb_1
+Xsky130_fd_sc_hd__conb_1_38 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__conb_1_38/LO
++ sky130_fd_sc_hd__conb_1_38/HI sky130_fd_sc_hd__conb_1
+Xsky130_fd_sc_hd__conb_1_27 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__conb_1_27/LO
++ sky130_fd_sc_hd__conb_1_27/HI sky130_fd_sc_hd__conb_1
+Xsky130_fd_sc_hd__conb_1_49 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__conb_1_49/LO
++ sky130_fd_sc_hd__conb_1_49/HI sky130_fd_sc_hd__conb_1
+Xsky130_fd_sc_hd__conb_1_0 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__conb_1_0/LO sky130_fd_sc_hd__conb_1_0/HI
++ sky130_fd_sc_hd__conb_1
+Xsky130_fd_sc_hd__conb_1_28 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__conb_1_28/LO
++ sky130_fd_sc_hd__conb_1_28/HI sky130_fd_sc_hd__conb_1
+Xsky130_fd_sc_hd__conb_1_17 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__conb_1_17/LO
++ sky130_fd_sc_hd__conb_1_17/HI sky130_fd_sc_hd__conb_1
+Xsky130_fd_sc_hd__conb_1_39 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__conb_1_39/LO
++ sky130_fd_sc_hd__conb_1_39/HI sky130_fd_sc_hd__conb_1
+Xsky130_fd_sc_hd__conb_1_1 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__conb_1_1/LO sky130_fd_sc_hd__conb_1_1/HI
++ sky130_fd_sc_hd__conb_1
+Xsky130_fd_sc_hd__conb_1_29 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__conb_1_29/LO
++ sky130_fd_sc_hd__conb_1_29/HI sky130_fd_sc_hd__conb_1
+Xsky130_fd_sc_hd__conb_1_18 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__conb_1_18/LO
++ sky130_fd_sc_hd__conb_1_18/HI sky130_fd_sc_hd__conb_1
+Xsky130_fd_sc_hd__inv_1_60 V_GND V_LOW V_GND V_LOW FALLING_COUNTER.COUNT_SUB_DFF7.Q
++ sky130_fd_sc_hd__inv_1_60/Y sky130_fd_sc_hd__inv_1
+Xsky130_fd_sc_hd__conb_1_2 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__conb_1_2/LO sky130_fd_sc_hd__conb_1_2/HI
++ sky130_fd_sc_hd__conb_1
+Xsky130_fd_sc_hd__conb_1_19 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__conb_1_19/LO
++ sky130_fd_sc_hd__conb_1_19/HI sky130_fd_sc_hd__conb_1
+Xsky130_fd_sc_hd__nand2_1_0 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__inv_1_46/A sky130_fd_sc_hd__nand2_1_2/A
++ sky130_fd_sc_hd__inv_1_19/A sky130_fd_sc_hd__nand2_1
+Xsky130_fd_sc_hd__inv_1_50 V_GND V_LOW V_GND V_LOW FALLING_COUNTER.COUNT_SUB_DFF2.Q
++ sky130_fd_sc_hd__inv_1_50/Y sky130_fd_sc_hd__inv_1
+Xsky130_fd_sc_hd__inv_1_61 V_GND V_LOW V_GND V_LOW FALLING_COUNTER.COUNT_SUB_DFF8.Q
++ sky130_fd_sc_hd__inv_1_61/Y sky130_fd_sc_hd__inv_1
+Xsky130_fd_sc_hd__conb_1_3 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__conb_1_3/LO sky130_fd_sc_hd__conb_1_3/HI
++ sky130_fd_sc_hd__conb_1
+Xsky130_fd_sc_hd__nand2_1_1 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__inv_1_47/A sky130_fd_sc_hd__inv_1_44/A
++ sky130_fd_sc_hd__nor2_1_0/Y sky130_fd_sc_hd__nand2_1
+Xsky130_fd_sc_hd__inv_1_40 V_GND V_LOW V_GND V_LOW RISING_COUNTER.COUNT_SUB_DFF9.Q
++ sky130_fd_sc_hd__inv_1_40/Y sky130_fd_sc_hd__inv_1
+Xsky130_fd_sc_hd__inv_1_51 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__inv_1_66/A sky130_fd_sc_hd__inv_1_51/Y
++ sky130_fd_sc_hd__inv_1
+Xsky130_fd_sc_hd__inv_1_62 V_GND V_LOW V_GND V_LOW FALLING_COUNTER.COUNT_SUB_DFF4.Q
++ sky130_fd_sc_hd__inv_1_62/Y sky130_fd_sc_hd__inv_1
+Xsky130_fd_sc_hd__conb_1_4 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__conb_1_4/LO sky130_fd_sc_hd__conb_1_4/HI
++ sky130_fd_sc_hd__conb_1
+Xsky130_fd_sc_hd__nand2_1_2 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__nand2_1_2/A sky130_fd_sc_hd__nand2_8_8/A
++ sky130_fd_sc_hd__inv_1_24/Y sky130_fd_sc_hd__nand2_1
+Xsky130_fd_sc_hd__inv_1_41 V_GND V_LOW V_GND V_LOW RISING_COUNTER.COUNT_SUB_DFF6.Q
++ sky130_fd_sc_hd__inv_1_41/Y sky130_fd_sc_hd__inv_1
+Xsky130_fd_sc_hd__inv_1_30 V_GND V_LOW V_GND V_LOW FALLING_COUNTER.COUNT_SUB_DFF11.Q
++ sky130_fd_sc_hd__inv_1_30/Y sky130_fd_sc_hd__inv_1
+Xsky130_fd_sc_hd__inv_1_52 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__inv_1_52/A sky130_fd_sc_hd__inv_1_52/Y
++ sky130_fd_sc_hd__inv_1
+Xsky130_fd_sc_hd__inv_1_63 V_GND V_LOW V_GND V_LOW FALLING_COUNTER.COUNT_SUB_DFF6.Q
++ sky130_fd_sc_hd__inv_1_63/Y sky130_fd_sc_hd__inv_1
+Xsky130_fd_sc_hd__conb_1_5 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__conb_1_5/LO sky130_fd_sc_hd__conb_1_5/HI
++ sky130_fd_sc_hd__conb_1
+Xsky130_fd_sc_hd__nand2_1_3 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__inv_1_66/A sky130_fd_sc_hd__nand2_1_3/Y
++ sky130_fd_sc_hd__inv_1_56/A sky130_fd_sc_hd__nand2_1
+Xsky130_fd_sc_hd__dfbbn_1_0 V_GND V_LOW V_GND V_LOW FULL_COUNTER.COUNT_SUB_DFF5.Q
++ sky130_fd_sc_hd__dfbbn_1_0/Q_N sky130_fd_sc_hd__inv_16_40/Y sky130_fd_sc_hd__conb_1_2/HI
++ sky130_fd_sc_hd__inv_1_4/Y FULL_COUNTER.COUNT_SUB_DFF4.Q sky130_fd_sc_hd__dfbbn_1
+Xsky130_fd_sc_hd__inv_1_42 V_GND V_LOW V_GND V_LOW FULL_COUNTER.COUNT_SUB_DFF1.Q sky130_fd_sc_hd__inv_1_42/Y
++ sky130_fd_sc_hd__inv_1
+Xsky130_fd_sc_hd__inv_1_20 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__inv_1_46/A sky130_fd_sc_hd__inv_1_20/Y
++ sky130_fd_sc_hd__inv_1
+Xsky130_fd_sc_hd__inv_1_31 V_GND V_LOW V_GND V_LOW FALLING_COUNTER.COUNT_SUB_DFF14.Q
++ sky130_fd_sc_hd__inv_1_31/Y sky130_fd_sc_hd__inv_1
+Xsky130_fd_sc_hd__inv_1_64 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__inv_1_64/A sky130_fd_sc_hd__inv_1_64/Y
++ sky130_fd_sc_hd__inv_1
+Xsky130_fd_sc_hd__inv_1_53 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__inv_1_53/A sky130_fd_sc_hd__inv_1_53/Y
++ sky130_fd_sc_hd__inv_1
+Xsky130_fd_sc_hd__conb_1_6 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__conb_1_6/LO sky130_fd_sc_hd__conb_1_6/HI
++ sky130_fd_sc_hd__conb_1
+Xsky130_fd_sc_hd__nand2_1_4 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__nand2_1_5/Y sky130_fd_sc_hd__nand2_8_9/A
++ sky130_fd_sc_hd__inv_1_24/A sky130_fd_sc_hd__nand2_1
+Xtransmission_gate_70 Reset V_HIGH V_GND V_SENSE transmission_gate_9/GN transmission_gate
+Xsky130_fd_sc_hd__dfbbn_1_1 V_GND V_LOW V_GND V_LOW FULL_COUNTER.COUNT_SUB_DFF6.Q
++ sky130_fd_sc_hd__dfbbn_1_1/Q_N sky130_fd_sc_hd__inv_16_40/Y sky130_fd_sc_hd__conb_1_3/HI
++ sky130_fd_sc_hd__inv_1_2/Y FULL_COUNTER.COUNT_SUB_DFF5.Q sky130_fd_sc_hd__dfbbn_1
+Xsky130_fd_sc_hd__inv_1_10 V_GND V_LOW V_GND V_LOW FULL_COUNTER.COUNT_SUB_DFF8.Q sky130_fd_sc_hd__inv_1_10/Y
++ sky130_fd_sc_hd__inv_1
+Xsky130_fd_sc_hd__inv_1_21 V_GND V_LOW V_GND V_LOW FULL_COUNTER.COUNT_SUB_DFF0.Q sky130_fd_sc_hd__inv_1_21/Y
++ sky130_fd_sc_hd__inv_1
+Xsky130_fd_sc_hd__inv_1_32 V_GND V_LOW V_GND V_LOW FALLING_COUNTER.COUNT_SUB_DFF15.Q
++ sky130_fd_sc_hd__inv_1_32/Y sky130_fd_sc_hd__inv_1
+Xsky130_fd_sc_hd__inv_1_43 V_GND V_LOW V_GND V_LOW RISING_COUNTER.COUNT_SUB_DFF1.Q
++ sky130_fd_sc_hd__inv_1_43/Y sky130_fd_sc_hd__inv_1
+Xsky130_fd_sc_hd__inv_1_65 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__inv_1_65/A sky130_fd_sc_hd__inv_1_65/Y
++ sky130_fd_sc_hd__inv_1
+Xsky130_fd_sc_hd__inv_1_54 V_GND V_LOW V_GND V_LOW FALLING_COUNTER.COUNT_SUB_DFF0.Q
++ sky130_fd_sc_hd__inv_1_54/Y sky130_fd_sc_hd__inv_1
+Xsky130_fd_sc_hd__conb_1_7 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__conb_1_7/LO sky130_fd_sc_hd__conb_1_7/HI
++ sky130_fd_sc_hd__conb_1
+Xsky130_fd_sc_hd__nand2_1_5 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__inv_1_66/A sky130_fd_sc_hd__nand2_1_5/Y
++ sky130_fd_sc_hd__inv_1_67/A sky130_fd_sc_hd__nand2_1
+Xtransmission_gate_60 Reset V_HIGH V_GND V_SENSE transmission_gate_9/GN transmission_gate
+Xtransmission_gate_71 Reset V_HIGH V_GND V_SENSE transmission_gate_9/GN transmission_gate
+Xsky130_fd_sc_hd__dfbbn_1_2 V_GND V_LOW V_GND V_LOW FULL_COUNTER.COUNT_SUB_DFF3.Q
++ sky130_fd_sc_hd__dfbbn_1_2/Q_N sky130_fd_sc_hd__inv_16_40/Y sky130_fd_sc_hd__conb_1_1/HI
++ sky130_fd_sc_hd__inv_1_0/Y FULL_COUNTER.COUNT_SUB_DFF2.Q sky130_fd_sc_hd__dfbbn_1
+Xsky130_fd_sc_hd__inv_1_0 V_GND V_LOW V_GND V_LOW FULL_COUNTER.COUNT_SUB_DFF3.Q sky130_fd_sc_hd__inv_1_0/Y
++ sky130_fd_sc_hd__inv_1
+Xsky130_fd_sc_hd__inv_1_11 V_GND V_LOW V_GND V_LOW FULL_COUNTER.COUNT_SUB_DFF9.Q sky130_fd_sc_hd__inv_1_11/Y
++ sky130_fd_sc_hd__inv_1
+Xsky130_fd_sc_hd__inv_1_22 V_GND V_LOW V_GND V_LOW FULL_COUNTER.COUNT_SUB_DFF2.Q sky130_fd_sc_hd__inv_1_22/Y
++ sky130_fd_sc_hd__inv_1
+Xsky130_fd_sc_hd__inv_1_33 V_GND V_LOW V_GND V_LOW FALLING_COUNTER.COUNT_SUB_DFF13.Q
++ sky130_fd_sc_hd__inv_1_33/Y sky130_fd_sc_hd__inv_1
+Xsky130_fd_sc_hd__inv_1_44 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__inv_1_44/A sky130_fd_sc_hd__inv_2_0/A
++ sky130_fd_sc_hd__inv_1
+Xsky130_fd_sc_hd__inv_1_66 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__inv_1_66/A sky130_fd_sc_hd__inv_1_66/Y
++ sky130_fd_sc_hd__inv_1
+Xsky130_fd_sc_hd__inv_1_55 V_GND V_LOW V_GND V_LOW FALLING_COUNTER.COUNT_SUB_DFF1.Q
++ sky130_fd_sc_hd__inv_1_55/Y sky130_fd_sc_hd__inv_1
+Xsky130_fd_sc_hd__inv_16_0 V_GND V_HIGH V_GND V_HIGH transmission_gate_9/GN Reset
++ sky130_fd_sc_hd__inv_16
+Xsky130_fd_sc_hd__conb_1_8 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__conb_1_8/LO sky130_fd_sc_hd__conb_1_8/HI
++ sky130_fd_sc_hd__conb_1
+Xtransmission_gate_50 Reset V_HIGH V_GND V_SENSE transmission_gate_9/GN transmission_gate
+Xtransmission_gate_61 Reset V_HIGH V_GND V_SENSE transmission_gate_9/GN transmission_gate
+Xtransmission_gate_72 Reset V_HIGH V_GND V_SENSE transmission_gate_9/GN transmission_gate
+Xsky130_fd_sc_hd__dfbbn_1_3 V_GND V_LOW V_GND V_LOW FULL_COUNTER.COUNT_SUB_DFF4.Q
++ sky130_fd_sc_hd__dfbbn_1_3/Q_N sky130_fd_sc_hd__inv_16_40/Y sky130_fd_sc_hd__conb_1_4/HI
++ sky130_fd_sc_hd__inv_1_1/Y FULL_COUNTER.COUNT_SUB_DFF3.Q sky130_fd_sc_hd__dfbbn_1
+Xsky130_fd_sc_hd__inv_1_1 V_GND V_LOW V_GND V_LOW FULL_COUNTER.COUNT_SUB_DFF4.Q sky130_fd_sc_hd__inv_1_1/Y
++ sky130_fd_sc_hd__inv_1
+Xsky130_fd_sc_hd__inv_1_12 V_GND V_LOW V_GND V_LOW FULL_COUNTER.COUNT_SUB_DFF16.Q
++ sky130_fd_sc_hd__inv_1_12/Y sky130_fd_sc_hd__inv_1
+Xsky130_fd_sc_hd__inv_1_23 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__inv_1_23/A sky130_fd_sc_hd__inv_1_23/Y
++ sky130_fd_sc_hd__inv_1
+Xsky130_fd_sc_hd__inv_1_45 V_GND V_LOW V_GND V_LOW RISING_COUNTER.COUNT_SUB_DFF0.Q
++ sky130_fd_sc_hd__inv_1_45/Y sky130_fd_sc_hd__inv_1
+Xsky130_fd_sc_hd__inv_1_34 V_GND V_LOW V_GND V_LOW RISING_COUNTER.COUNT_SUB_DFF5.Q
++ sky130_fd_sc_hd__inv_1_34/Y sky130_fd_sc_hd__inv_1
+Xsky130_fd_sc_hd__inv_1_67 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__inv_1_67/A sky130_fd_sc_hd__inv_1_67/Y
++ sky130_fd_sc_hd__inv_1
+Xsky130_fd_sc_hd__inv_1_56 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__inv_1_56/A sky130_fd_sc_hd__inv_1_56/Y
++ sky130_fd_sc_hd__inv_1
+Xsky130_fd_sc_hd__inv_16_1 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__inv_16_3/A sky130_fd_sc_hd__inv_16_8/Y
++ sky130_fd_sc_hd__inv_16
+Xsky130_fd_sc_hd__conb_1_9 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__conb_1_9/LO sky130_fd_sc_hd__conb_1_9/HI
++ sky130_fd_sc_hd__conb_1
+Xsky130_fd_sc_hd__nand2_8_0 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__inv_1_19/Y sky130_fd_sc_hd__inv_1_23/A
++ sky130_fd_sc_hd__inv_1_18/A sky130_fd_sc_hd__nand2_8
+Xtransmission_gate_40 Reset V_HIGH V_GND V_SENSE transmission_gate_9/GN transmission_gate
+Xtransmission_gate_73 Reset V_HIGH V_GND V_SENSE transmission_gate_9/GN transmission_gate
+Xtransmission_gate_62 Reset V_HIGH V_GND V_SENSE transmission_gate_9/GN transmission_gate
+Xtransmission_gate_51 Reset V_HIGH V_GND V_SENSE transmission_gate_9/GN transmission_gate
+Xsky130_fd_sc_hd__dfbbn_1_4 V_GND V_LOW V_GND V_LOW FULL_COUNTER.COUNT_SUB_DFF7.Q
++ sky130_fd_sc_hd__dfbbn_1_4/Q_N sky130_fd_sc_hd__inv_16_40/Y sky130_fd_sc_hd__conb_1_0/HI
++ sky130_fd_sc_hd__inv_1_3/Y FULL_COUNTER.COUNT_SUB_DFF6.Q sky130_fd_sc_hd__dfbbn_1
+Xsky130_fd_sc_hd__inv_1_2 V_GND V_LOW V_GND V_LOW FULL_COUNTER.COUNT_SUB_DFF6.Q sky130_fd_sc_hd__inv_1_2/Y
++ sky130_fd_sc_hd__inv_1
+Xsky130_fd_sc_hd__inv_1_13 V_GND V_LOW V_GND V_LOW FULL_COUNTER.COUNT_SUB_DFF18.Q
++ sky130_fd_sc_hd__inv_1_13/Y sky130_fd_sc_hd__inv_1
+Xsky130_fd_sc_hd__inv_1_24 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__inv_1_24/A sky130_fd_sc_hd__inv_1_24/Y
++ sky130_fd_sc_hd__inv_1
+Xsky130_fd_sc_hd__inv_1_46 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__inv_1_46/A sky130_fd_sc_hd__inv_1_66/A
++ sky130_fd_sc_hd__inv_1
+Xsky130_fd_sc_hd__inv_1_35 V_GND V_LOW V_GND V_LOW RISING_COUNTER.COUNT_SUB_DFF7.Q
++ sky130_fd_sc_hd__inv_1_35/Y sky130_fd_sc_hd__inv_1
+Xsky130_fd_sc_hd__inv_1_57 V_GND V_LOW V_GND V_LOW FALLING_COUNTER.COUNT_SUB_DFF5.Q
++ sky130_fd_sc_hd__inv_1_57/Y sky130_fd_sc_hd__inv_1
+Xsky130_fd_sc_hd__inv_1_68 V_GND V_LOW V_GND V_LOW FALLING_COUNTER.COUNT_SUB_DFF3.Q
++ sky130_fd_sc_hd__inv_1_68/Y sky130_fd_sc_hd__inv_1
+Xsky130_fd_sc_hd__inv_16_2 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__inv_16_2/Y sky130_fd_sc_hd__inv_16_4/Y
++ sky130_fd_sc_hd__inv_16
+Xsky130_fd_sc_hd__nand2_8_1 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__inv_1_20/Y sky130_fd_sc_hd__inv_1_18/A
++ sky130_fd_sc_hd__inv_1_23/A sky130_fd_sc_hd__nand2_8
+Xtransmission_gate_41 Reset V_HIGH V_GND V_SENSE transmission_gate_9/GN transmission_gate
+Xtransmission_gate_30 Reset V_HIGH V_GND V_SENSE transmission_gate_9/GN transmission_gate
+Xtransmission_gate_52 Reset V_HIGH V_GND V_SENSE transmission_gate_9/GN transmission_gate
+Xtransmission_gate_74 Reset V_HIGH V_GND V_SENSE transmission_gate_9/GN transmission_gate
+Xtransmission_gate_63 Reset V_HIGH V_GND V_SENSE transmission_gate_9/GN transmission_gate
+Xsky130_fd_sc_hd__dfbbn_1_5 V_GND V_LOW V_GND V_LOW FULL_COUNTER.COUNT_SUB_DFF9.Q
++ sky130_fd_sc_hd__dfbbn_1_5/Q_N sky130_fd_sc_hd__inv_16_40/Y sky130_fd_sc_hd__conb_1_9/HI
++ sky130_fd_sc_hd__inv_1_11/Y FULL_COUNTER.COUNT_SUB_DFF8.Q sky130_fd_sc_hd__dfbbn_1
+Xsky130_fd_sc_hd__inv_1_3 V_GND V_LOW V_GND V_LOW FULL_COUNTER.COUNT_SUB_DFF7.Q sky130_fd_sc_hd__inv_1_3/Y
++ sky130_fd_sc_hd__inv_1
+Xsky130_fd_sc_hd__inv_1_14 V_GND V_LOW V_GND V_LOW FULL_COUNTER.COUNT_SUB_DFF15.Q
++ sky130_fd_sc_hd__inv_1_14/Y sky130_fd_sc_hd__inv_1
+Xsky130_fd_sc_hd__inv_1_36 V_GND V_LOW V_GND V_LOW RISING_COUNTER.COUNT_SUB_DFF4.Q
++ sky130_fd_sc_hd__inv_1_36/Y sky130_fd_sc_hd__inv_1
+Xsky130_fd_sc_hd__inv_1_47 V_GND V_LOW V_GND V_LOW sky130_fd_sc_hd__inv_1_47/A sky130_fd_sc_hd__inv_1_47/Y
++ sky130_fd_sc_hd__inv_1
+Xsky130_fd_sc_hd__inv_1_25 V_GND V_LOW V_GND V_LOW RISING_COUNTER.COUNT_SUB_DFF13.Q
++ sky130_fd_sc_hd__inv_1_25/Y sky130_fd_sc_hd__inv_1
+Xsky130_fd_sc_hd__inv_1_58 V_GND V_LOW V_GND V_LOW FALLING_COUNTER.COUNT_SUB_DFF10.Q
++ sky130_fd_sc_hd__inv_1_58/Y sky130_fd_sc_hd__inv_1
+Xsky130_fd_sc_hd__inv_1_69 V_GND V_LOW V_GND V_LOW RISING_COUNTER.COUNT_SUB_DFF11.Q
++ sky130_fd_sc_hd__inv_1_69/Y sky130_fd_sc_hd__inv_1
