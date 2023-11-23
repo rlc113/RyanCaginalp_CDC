@@ -1,6 +1,6 @@
 #Notation is misleading - both have PEX done on them, this file just fixes the port order
-source_file = "/home/ryan/openROADTests/NgSpice/CDC.spice"
-destination_file = "/home/ryan/openROADTests/NgSpice/CDC_PEX.spice"
+source_file = "/content/RyanCaginalp_CDC/NgSpice/CDC.spice"
+destination_file = "/content/RyanCaginalp_CDC/NgSpice/CDC_PEX.spice"
 
 sf = open(source_file, "r")
 df = open(destination_file, "w")
