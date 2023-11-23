@@ -1,8 +1,14 @@
 import math
+import sys
 
-chain_length = 16
+#Desired configuration of CDC - get from command line arguments, if available
+chain_length = 8
 chain_number = 1
 chain_size = 1
+if (len(sys.argv) == 4):
+    chain_length = int(sys.argv[1])
+    chain_number = int(sys.argv[2])
+    chain_size = int(sys.argv[3])
 
 #First generate the verilog chain files
 
@@ -96,6 +102,27 @@ destination_file.writelines(df_lines)
 source_file.close()
 destination_file.close()
 
+#Finally, add the transmission gates to the CDC file
+source_file = open('Templates/CDC_Template.v', 'r')
+destination_file = open('HW_CDC_Verilog/CDC.v', 'w')
+
+sf_lines = source_file.readlines()
+df_lines = []
+
+#Figure out how many transmission gates we need
+transmission_gate_number = max(5, math.ceil(5 * chain_length * chain_number * chain_size / 16.0))
+
+for line in sf_lines:
+    df_lines.append(line)
+    if "sky130_fd_sc_hd__inv_16 HIGH_RESET_INV" in line:
+        for i in range(transmission_gate_number):
+            df_lines.append("    transmission_gate CDC_TRANSMISSION_GATE" + str(i+1) + "(.G(Reset), .GN(ResetB), .O(V_SENSE));\n")
+
+destination_file.writelines(df_lines)
+
+source_file.close()
+destination_file.close()
+
 #Then generate the chain driver file
 source_file = open('Templates/Chain_Driver_Template.v', 'r')
 destination_file = open('HW_CDC_Verilog/Chain_Driver.v', 'w')
@@ -161,16 +188,12 @@ destination_file = open('Other/V_HIGH_INSTANCES.txt', 'w')
 #Add in gates we know will be there
 df_lines = []
 df_lines.append("HIGH_RESET_INV\n")
-df_lines.append("CDC_TRANSMISSION_GATE1\n")
-df_lines.append("CDC_TRANSMISSION_GATE2\n")
-df_lines.append("CDC_TRANSMISSION_GATE3\n")
-df_lines.append("CDC_TRANSMISSION_GATE4\n")
-df_lines.append("CDC_TRANSMISSION_GATE5\n")
+for i in range(transmission_gate_number): df_lines.append("CDC_TRANSMISSION_GATE" + str(i+1) + "\n")
 
 #Add in the last gates of the chain drivers
-if last_inverter_number == 1: df_lines.append("\CDC_CHAIN_DRIVER.chain_driver_last_inv\n")
+if last_inverter_number == 1: df_lines.append("\CDC_CHAIN_DRIVER.chain_driver_last_inv.cell_INV\n")
 else:
-    for i in range(last_inverter_number): df_lines.append("\CDC_CHAIN_DRIVER.chain_driver_last_inv_" + str(i+1) + "\n")
+    for i in range(last_inverter_number): df_lines.append("\CDC_CHAIN_DRIVER.chain_driver_last_inv_" + str(i+1) + ".cell_INV\n")
 
 #Remove last newline
 df_lines[len(df_lines) - 1] = df_lines[len(df_lines) - 1].replace("\n", "")
@@ -185,7 +208,23 @@ df_lines = []
 #Add in the inverter chain inverters
 for i in range(chain_length):
     for j in range(chain_number):
-        df_lines.append("\CAP_CHAIN.cap_chain_inv" + str(i+1) + "_" + str(j+1) + "\n")
+        df_lines.append("\CAP_CHAIN.cap_chain_inv" + str(i+1) + "_" + str(j+1) + ".cell_INV\n")
+
+#Remove last newline
+df_lines[len(df_lines) - 1] = df_lines[len(df_lines) - 1].replace("\n", "")
+
+destination_file.writelines(df_lines)
+destination_file.close()
+
+#Finally add in some routing stuff to make sure that transmission gates can be connected to V_SENSE
+destination_file = open('Other/V_SENSE_Routes.txt', 'w')
+df_lines = []
+
+df_lines.append("r_V_SENSE\n")
+
+#Add in the inverter chain inverters
+for i in range(transmission_gate_number):
+    df_lines.append("CDC_TRANSMISSION_GATE" + str(i+1) + " O\n")
 
 #Remove last newline
 df_lines[len(df_lines) - 1] = df_lines[len(df_lines) - 1].replace("\n", "")
@@ -199,13 +238,13 @@ destination_file.close()
 
 #Figure out the heights first
 
-#The V_HIGH region should always have 1 row for a height of 7, so nothing needs to be changed for it
+#The V_HIGH region should always have 6 rows for a height of 21, so nothing needs to be changed for it
 
 #The V_SENSE region should have as many rows as it has chains - the height will reflect that
-V_SENSE_Height = 5
-if chain_number == 2: V_SENSE_Height = 7
-elif chain_number == 3: V_SENSE_Height = 10
-elif chain_number == 4: V_SENSE_Height = 13
+V_SENSE_Height = 7
+if chain_number == 2: V_SENSE_Height = 10
+elif chain_number == 3: V_SENSE_Height = 12
+elif chain_number == 4: V_SENSE_Height = 14
 
 #The chip height will fit snugly to the two voltage regions
 core_height = 160
@@ -224,27 +263,29 @@ inv_16_width = 7.36
 transmission_gate_width = 3.22
 
 #Calculate the V_SENSE region width first
-V_SENSE_Width = inv_1_width * chain_length * 1.33
-if (chain_size == 4): V_SENSE_Width = inv_4_width * chain_length * 1.33
-if (chain_size == 6): V_SENSE_Width = inv_6_width * chain_length * 1.33
-if (chain_size == 8): V_SENSE_Width = inv_8_width * chain_length * 1.33
-if (chain_size == 12): V_SENSE_Width = inv_12_width * chain_length * 1.33
-if (chain_size == 16): V_SENSE_Width = inv_16_width * chain_length * 1.33
+V_SENSE_Width = inv_1_width * chain_length * 2
+if (chain_size == 4): V_SENSE_Width = inv_4_width * chain_length * 2
+if (chain_size == 6): V_SENSE_Width = inv_6_width * chain_length * 2
+if (chain_size == 8): V_SENSE_Width = inv_8_width * chain_length * 2
+if (chain_size == 12): V_SENSE_Width = inv_12_width * chain_length * 2
+if (chain_size == 16): V_SENSE_Width = inv_16_width * chain_length * 2
 
 #Then calculate the V_HIGH region width
-V_HIGH_Width = 5 * transmission_gate_width + inv_16_width
+V_HIGH_Width = transmission_gate_number * transmission_gate_width + inv_16_width
 if (last_inverter_size == 2): V_HIGH_Width += inv_2_width
 elif (last_inverter_size == 4): V_HIGH_Width += inv_4_width
 elif (last_inverter_size == 8): V_HIGH_Width += inv_8_width
 elif (last_inverter_size == 16): V_HIGH_Width += inv_16_width
-else: V_HIGH_Width += inv_16_width * last_inverter_size/2.0
-V_HIGH_Width *= 1.33
+else: V_HIGH_Width += inv_16_width * last_inverter_size/16.0
+V_HIGH_Width *= 0.75
+
+#print(V_SENSE_Width)
+#print(V_HIGH_Width)
 
 #Finally calculate the chip width
-core_width = max(V_SENSE_Width, V_HIGH_Width) * 3 + 30
+core_width = max(V_SENSE_Width, V_HIGH_Width) * 1.2 + 100 + 30
 die_width = core_width + 30
 
-#Create floorplanning1.tcl
 source_file = open('Templates/Floorplanning_Template1.tcl', 'r')
 destination_file = open('Floorplanning1.tcl', 'w')
 
@@ -270,16 +311,19 @@ for line in sf_lines:
     df_lines.append(line)
 
     if "add_global_connection -net V_SENSE -inst_pattern {CAP_CHAIN.*}" in line:
-        if last_inverter_number == 1: df_lines.append("add_global_connection -net V_HIGH -inst_pattern {CDC_CHAIN_DRIVER.chain_driver_last_inv} -pin_pattern {VPWR|VPB} -power\n")
+        if last_inverter_number == 1: df_lines.append("add_global_connection -net V_HIGH -inst_pattern {CDC_CHAIN_DRIVER.chain_driver_last_inv.cell_INV} -pin_pattern {VPWR|VPB} -power\n")
         else:
-            for i in range(last_inverter_number): df_lines.append("add_global_connection -net V_HIGH -inst_pattern {CDC_CHAIN_DRIVER.chain_driver_last_inv_" + str(i+1) + "} -pin_pattern {VPWR|VPB} -power\n")
+            for i in range(last_inverter_number): df_lines.append("add_global_connection -net V_HIGH -inst_pattern {CDC_CHAIN_DRIVER.chain_driver_last_inv_" + str(i+1) + ".cell_INV} -pin_pattern {VPWR|VPB} -power\n")
+
+    if "add_global_connection -net V_HIGH -inst_pattern {HIGH_RESET_INV}" in line:
+       for i in range(transmission_gate_number):
+           df_lines.append("add_global_connection -net V_HIGH -inst_pattern {CDC_TRANSMISSION_GATE" + str(i+1) + "} -pin_pattern {VPWR|VPB} -power\n")
 
 destination_file.writelines(df_lines)
 
 source_file.close()
 destination_file.close()
 
-#Create floorplanning2.tcl
 source_file = open('Templates/Floorplanning_Template2.tcl', 'r')
 destination_file = open('Floorplanning2.tcl', 'w')
 
@@ -305,9 +349,13 @@ for line in sf_lines:
     df_lines.append(line)
 
     if "add_global_connection -net V_SENSE -inst_pattern {CAP_CHAIN.*}" in line:
-        if last_inverter_number == 1: df_lines.append("add_global_connection -net V_HIGH -inst_pattern {CDC_CHAIN_DRIVER.chain_driver_last_inv} -pin_pattern {VPWR|VPB} -power\n")
+        if last_inverter_number == 1: df_lines.append("add_global_connection -net V_HIGH -inst_pattern {CDC_CHAIN_DRIVER.chain_driver_last_inv.cell_INV} -pin_pattern {VPWR|VPB} -power\n")
         else:
-            for i in range(last_inverter_number): df_lines.append("add_global_connection -net V_HIGH -inst_pattern {CDC_CHAIN_DRIVER.chain_driver_last_inv_" + str(i+1) + "} -pin_pattern {VPWR|VPB} -power\n")
+            for i in range(last_inverter_number): df_lines.append("add_global_connection -net V_HIGH -inst_pattern {CDC_CHAIN_DRIVER.chain_driver_last_inv_" + str(i+1) + ".cell_INV} -pin_pattern {VPWR|VPB} -power\n")
+
+    if "add_global_connection -net V_HIGH -inst_pattern {HIGH_RESET_INV}" in line:
+       for i in range(transmission_gate_number):
+           df_lines.append("add_global_connection -net V_HIGH -inst_pattern {CDC_TRANSMISSION_GATE" + str(i+1) + "} -pin_pattern {VPWR|VPB} -power\n")
 
 destination_file.writelines(df_lines)
 
