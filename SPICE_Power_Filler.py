@@ -44,14 +44,13 @@ for l in sf_lines:
     ports.insert(5, "V_LOW")
     ports.insert(6, "V_LOW")
     l = " ".join(ports)
-  #NAND3 all receive V_LOW, but for some reason O and C are switched for YoSys output...
+  #NAND3 all receive V_LOW
   if ("sky130_fd_sc_hd__nand3_" in l):
     ports = l.split(" ")
     ports.insert(4, "V_GND")
     ports.insert(5, "V_GND")
     ports.insert(6, "V_LOW")
     ports.insert(7, "V_LOW")
-    ports[3], ports[8] = ports[8], ports[3]
     l = " ".join(ports)
   #TiHi Cells receive V_LOW
   if "sky130_fd_sc_hd__conb_1" in l:
@@ -68,10 +67,10 @@ for l in sf_lines:
 
     ports_SPICE.append(ports_LIB[0])
     ports_SPICE.append(ports_LIB[3])
-    ports_SPICE.append(ports_LIB[2])
+    ports_SPICE.append(ports_LIB[1])
     ports_SPICE.append(ports_LIB[5])
     ports_SPICE.append(ports_LIB[6])
-    ports_SPICE.append(ports_LIB[1])
+    ports_SPICE.append(ports_LIB[2])
     ports_SPICE.append(ports_LIB[4])
     ports_SPICE.append(ports_LIB[7])
 
