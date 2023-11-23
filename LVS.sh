@@ -5,7 +5,7 @@ python3 SPICE_Power_Filler.py
 python3 LVS/SPICE_DC_Remover.py
 
 # Use Magic to extract a SPICE file from the GDS
-magic -rcfile /home/ryan/MagicTests/SKY130/git_open_pdks/sky130/sky130A/libs.tech/magic/sky130A.magicrc -noconsole -dnull LVS/Magic_Extraction.tcl
+magic -rcfile /content/conda-env/share/pdk/sky130A/libs.tech/magic/sky130A.magicrc -noconsole -dnull LVS/Magic_Extraction.tcl
 
 # Copy the CDC file into the LVS folder
 mv CDC.spice LVS/LayoutExtraction.spice
