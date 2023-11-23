@@ -237,6 +237,6 @@ def Interpolation(filename, size, length):
         #Return the interpolated values
         return E_interpolated, T_interpolated, R_interpolated
 
-time1, cap1, time2, cap2 = SimInterpolation("Time_Data.csv", 6, 10)
+#time1, cap1, time2, cap2 = SimInterpolation("Time_Data.csv", 6, 10)
 #E, T, R = Interpolation("Data.csv", 6, 10)
 #T = TimeInterpolation("Time_Data.csv", 6, 10, 12.5)
