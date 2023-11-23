@@ -1,8 +1,8 @@
 #This file allows the user to modify simulation files to create custom simulations
 import sys
 
-source_file = "/home/ryan/openROADTests/NgSpice/CDC_PEX_1_Test.cir"
-destination_file = "/home/ryan/openROADTests/NgSpice/CDC_PEX_Test.cir"
+source_file = "/content/RyanCaginalp_CDC/NgSpice/CDC_PEX_1_Test.cir"
+destination_file = "/content/RyanCaginalp_CDC/NgSpice/CDC_PEX_Test.cir"
 
 #Desired parameters for simulation - simulation_time should overshoot, while execution_time should undershoot
 #These values are obtained through the input arguments, if present
