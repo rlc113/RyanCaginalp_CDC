@@ -306,7 +306,7 @@ for line in sf_lines:
         words = line.split(" ")
         words[2] = str(math.ceil(V_SENSE_Height)) + "\n"
         line = " ".join(words)
-    elif "initialize_floorplan -die_area" in line: line = 'initialize_floorplan -die_area "0 0 ' + str(math.ceil(die_width)) + ' 190" -core_area "30 30 ' + str(math.ceil(core_width)) + ' 160" -site unithd'
+    elif "initialize_floorplan -die_area" in line: line = 'initialize_floorplan -die_area "0 0 ' + str(math.ceil(die_width)) + ' 190" -core_area "30 30 ' + str(math.ceil(core_width)) + ' 160" -site unithd\n'
 
     df_lines.append(line)
 
@@ -344,7 +344,7 @@ for line in sf_lines:
         words = line.split(" ")
         words[2] = str(math.ceil(V_SENSE_Height)) + "\n"
         line = " ".join(words)
-    elif "initialize_floorplan -die_area" in line: line = 'initialize_floorplan -die_area "0 0 ' + str(math.ceil(die_width)) + ' 190" -core_area "30 30 ' + str(math.ceil(core_width)) + ' 160" -site unithd'
+    elif "initialize_floorplan -die_area" in line: line = 'initialize_floorplan -die_area "0 0 ' + str(math.ceil(die_width)) + ' 190" -core_area "30 30 ' + str(math.ceil(core_width)) + ' 160" -site unithd\n'
 
     df_lines.append(line)
 
