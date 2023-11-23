@@ -1,6 +1,6 @@
 #This file removes decap cells from extracted SPICE file as they aren't present in synthesis
-source_file = "/home/ryan/openROADTests/LVS/LayoutExtraction.spice"
-destination_file = "/home/ryan/openROADTests/LVS/LayoutExtraction_Without_Decap.spice"
+source_file = "/content/RyanCaginalp_CDC/LVS/LayoutExtraction.spice"
+destination_file = "/content/RyanCaginalp_CDC/LVS/LayoutExtraction_Without_Decap.spice"
 
 sf = open(source_file, "r")
 df = open(destination_file, "w")
