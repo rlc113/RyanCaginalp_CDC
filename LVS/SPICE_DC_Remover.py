@@ -1,6 +1,6 @@
 #This file removes the DC connections that preserve wirenames since they crash the LVS tool
-source_file = "/home/ryan/openROADTests/LVS/SynthesizedExtraction.spice"
-destination_file = "/home/ryan/openROADTests/LVS/SynthesizedExtraction_Without_DC.spice"
+source_file = "/content/RyanCaginalp_CDC/LVS/SynthesizedExtraction.spice"
+destination_file = "/content/RyanCaginalp_CDC/LVS/SynthesizedExtraction_Without_DC.spice"
 
 sf = open(source_file, "r")
 df = open(destination_file, "w")
