@@ -1,5 +1,5 @@
-source_file = open('duplicate_taps.def', 'r')
-destination_file = open('fixed_taps.def', 'w')
+source_file = open('duplicate_caps.def', 'r')
+destination_file = open('fixed_caps.def', 'w')
 
 sf_lines = source_file.readlines()
 df_lines = []
