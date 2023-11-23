@@ -2,7 +2,8 @@ import csv
 import numpy as np
 import math
 
-def TimeInterpolation(filename, size, length, capacitance):
+#This function tells us which input capacitances to use and how long we expect the measurement time to take
+def SimInterpolation(filename, size, length):
     #First check the inputs - If it isn't possible, return -1
     if size not in [1, 2, 4, 6, 8, 12, 16]: return -1
     if length % 2 != 0 or length < 8 or length > 20: return -1
@@ -20,14 +21,14 @@ def TimeInterpolation(filename, size, length, capacitance):
     Valid_Sizes = [1, 2, 4, 8, 16]    
     Valid_Lengths = [8, 12, 16]
 
-    #First case - The size and length were already simulated
+    #First case - The size and length were already simulated - we can just return the times and capacitances
     if size in Valid_Sizes and length in Valid_Lengths:
-        #Get the capacitances and use it to get the slope
-        T_slope = (T_dict[str(size)][str(length)][1][1] - T_dict[str(size)][str(length)][0][1])/(T_dict[str(size)][str(length)][1][0] - T_dict[str(size)][str(length)][0][0])
+        cap1 = T_dict[str(size)][str(length)][0][0]
+        time1 = T_dict[str(size)][str(length)][0][1]
+        cap2 = T_dict[str(size)][str(length)][1][0]
+        time2 = T_dict[str(size)][str(length)][1][1]
 
-        #Then we can predict the time
-        T_interpolated = T_dict[str(size)][str(length)][0][1] + T_slope * (capacitance - T_dict[str(size)][str(length)][0][0])
-        return T_interpolated
+        return cap1, time1, cap2, time2 
 
     #Second case - We have a valid size but not a valid length.
     if size in Valid_Sizes and length not in Valid_Lengths:
@@ -42,19 +43,25 @@ def TimeInterpolation(filename, size, length, capacitance):
         closest_length = Valid_Lengths[closest_length_index]
         second_closest_length = Valid_Lengths[second_closest_length_index]
 
-        #Next, get the interpolated time for each length
-        closest_length_T = TimeInterpolation(filename, size, closest_length, capacitance)
-        second_closest_length_T = TimeInterpolation(filename, size, second_closest_length, capacitance)
+        #Get the values for cap and time
+        closest_cap1, closest_time1, closest_cap2, closest_time2 = SimInterpolation("Time_Data.csv", size, closest_length)
+        second_closest_cap1, second_closest_time1, second_closest_cap2, second_closest_time2 = SimInterpolation("Time_Data.csv", size, second_closest_length)
 
-        #Get the slope between these lengths
-        T_slope = (closest_length_T - second_closest_length_T)/(closest_length - second_closest_length)
+        #Get the slope between these
+        cap1_slope = (closest_cap1 - second_closest_cap1)/(closest_length - second_closest_length)
+        time1_slope = (closest_time1 - second_closest_time1)/(closest_length - second_closest_length)
+        cap2_slope = (closest_cap2 - second_closest_cap2)/(closest_length - second_closest_length)
+        time2_slope = (closest_time2 - second_closest_time2)/(closest_length - second_closest_length)
 
-        #Calculate interpolated time
-        T_interpolated = second_closest_length_T + T_slope * (length - second_closest_length)
+        #Calculate the interpolated values
+        cap1_interpolated = second_closest_cap1 + cap1_slope * (length - second_closest_length)
+        time1_interpolated = second_closest_time1 + time1_slope * (length - second_closest_length)
+        cap2_interpolated = second_closest_cap2 + cap2_slope * (length - second_closest_length)
+        time2_interpolated = second_closest_time2 + time2_slope * (length - second_closest_length)
 
-        #Return the interpolated time
-        return T_interpolated
-    
+        #Return the interpolated values
+        return cap1_interpolated, time1_interpolated, cap2_interpolated, time2_interpolated
+
     #Third case - We have a valid length but not a valid size.
     if size not in Valid_Sizes and length in Valid_Lengths:
         #First, we want to find the two values closest to the given size such that we can "interpolate" from those values linearly
@@ -68,22 +75,29 @@ def TimeInterpolation(filename, size, length, capacitance):
         closest_size = Valid_Sizes[closest_size_index]
         second_closest_size = Valid_Sizes[second_closest_size_index]
 
-        #Next, get the interpolated time for each length
-        closest_size_T = TimeInterpolation(filename, closest_size, length, capacitance)
-        second_closest_size_T = TimeInterpolation(filename, second_closest_size, length, capacitance)
+        #Get the values for cap and time
+        closest_cap1, closest_time1, closest_cap2, closest_time2 = SimInterpolation("Time_Data.csv", closest_size, length)
+        second_closest_cap1, second_closest_time1, second_closest_cap2, second_closest_time2 = SimInterpolation("Time_Data.csv", second_closest_size, length)
 
-        #Get the slope between these lengths
-        T_slope = (closest_size_T - second_closest_size_T)/(closest_size - second_closest_size)
+        #Get the slope between these
+        cap1_slope = (closest_cap1 - second_closest_cap1)/(closest_size - second_closest_size)
+        time1_slope = (closest_time1 - second_closest_time1)/(closest_size - second_closest_size)
+        cap2_slope = (closest_cap2 - second_closest_cap2)/(closest_size - second_closest_size)
+        time2_slope = (closest_time2 - second_closest_time2)/(closest_size - second_closest_size)
 
-        #Calculate interpolated time
-        T_interpolated = second_closest_size_T + T_slope * (size - second_closest_size)
+        #Calculate the interpolated values
+        cap1_interpolated = second_closest_cap1 + cap1_slope * (size - second_closest_size)
+        time1_interpolated = second_closest_time1 + time1_slope * (size - second_closest_size)
+        cap2_interpolated = second_closest_cap2 + cap2_slope * (size - second_closest_size)
+        time2_interpolated = second_closest_time2 + time2_slope * (size - second_closest_size)
 
-        #Return the interpolated time
-        return T_interpolated
+        #Return the interpolated values
+        return cap1_interpolated, time1_interpolated, cap2_interpolated, time2_interpolated
 
-    #Fourth case - neither length nor size was simulated
+
+    #Fourth case - We have neither a valid length nor a valid size.
     if size not in Valid_Sizes and length not in Valid_Lengths:
-        #First, we want to find the two values closest to the given size
+        #First, we want to find the two values closest to the given size such that we can "interpolate" from those values linearly
         dist = np.array(Valid_Sizes) - size
         closest_size_index = np.argmin(abs(dist))
 
@@ -94,19 +108,24 @@ def TimeInterpolation(filename, size, length, capacitance):
         closest_size = Valid_Sizes[closest_size_index]
         second_closest_size = Valid_Sizes[second_closest_size_index]
 
-        #Next, get the interpolated time for each length
-        closest_size_T = TimeInterpolation(filename, closest_size, length, capacitance)
-        second_closest_size_T = TimeInterpolation(filename, second_closest_size, length, capacitance)
+        #Get the values for cap and time
+        closest_cap1, closest_time1, closest_cap2, closest_time2 = SimInterpolation("Time_Data.csv", closest_size, length)
+        second_closest_cap1, second_closest_time1, second_closest_cap2, second_closest_time2 = SimInterpolation("Time_Data.csv", second_closest_size, length)
 
-        #Get the slope between these lengths
-        T_slope = (closest_size_T - second_closest_size_T)/(closest_size - second_closest_size)
+        #Get the slope between these
+        cap1_slope = (closest_cap1 - second_closest_cap1)/(closest_size - second_closest_size)
+        time1_slope = (closest_time1 - second_closest_time1)/(closest_size - second_closest_size)
+        cap2_slope = (closest_cap2 - second_closest_cap2)/(closest_size - second_closest_size)
+        time2_slope = (closest_time2 - second_closest_time2)/(closest_size - second_closest_size)
 
-        #Calculate interpolated time
-        T_interpolated = second_closest_size_T + T_slope * (size - second_closest_size)
+        #Calculate the interpolated values
+        cap1_interpolated = second_closest_cap1 + cap1_slope * (size - second_closest_size)
+        time1_interpolated = second_closest_time1 + time1_slope * (size - second_closest_size)
+        cap2_interpolated = second_closest_cap2 + cap2_slope * (size - second_closest_size)
+        time2_interpolated = second_closest_time2 + time2_slope * (size - second_closest_size)
 
-        #Return the interpolated time
-        return T_interpolated
-
+        #Return the interpolated values
+        return cap1_interpolated, time1_interpolated, cap2_interpolated, time2_interpolated
     
 def Interpolation(filename, size, length):
     #First check the inputs - If it isn't possible, return all -1s
@@ -218,5 +237,6 @@ def Interpolation(filename, size, length):
         #Return the interpolated values
         return E_interpolated, T_interpolated, R_interpolated
 
+time1, cap1, time2, cap2 = SimInterpolation("Time_Data.csv", 6, 10)
 #E, T, R = Interpolation("Data.csv", 6, 10)
 #T = TimeInterpolation("Time_Data.csv", 6, 10, 12.5)
