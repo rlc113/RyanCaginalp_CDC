@@ -1,6 +1,6 @@
 from Interpolation import *
 
-def main_selector(interpolated, targeted_true_FoM_false, target_type, target_value, FoM, restricted, Restriction):
+def MainSelector(interpolated, targeted_true_FoM_false, target_type, target_value, FoM, restricted, Restriction):
 
     #Set up lengths and sizes variables for iteration
     non_interpolated_lengths = [8, 12, 16]
@@ -104,7 +104,7 @@ def main_selector(interpolated, targeted_true_FoM_false, target_type, target_val
         while acceptingInput:
             user_input = input()
             if not user_input.isdigit():
-                print("Please enter a positive whole number of designs: ", end = "")
+                print("Please enter a positive whole number to select a design: ", end = "")
             elif int(user_input) > 0 and int(user_input) <= num_selections:
                 acceptingInput = False
                 selected = True
