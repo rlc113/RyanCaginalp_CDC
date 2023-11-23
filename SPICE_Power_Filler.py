@@ -1,6 +1,6 @@
 #This script modifies the SPICE file outputted by YoSys so that they have power ports - it also reshuffles some ports that were incorrectly modified
-source_file = "/home/ryan/openROADTests/SynthesizedExtraction.spice"
-destination_file = "/home/ryan/openROADTests/LVS/SynthesizedExtraction.spice"
+source_file = "/content/RyanCaginalp_CDC/SynthesizedExtraction.spice"
+destination_file = "/content/RyanCaginalp_CDC/LVS/SynthesizedExtraction.spice"
 
 sf = open(source_file, "r")
 df = open(destination_file, "w")
