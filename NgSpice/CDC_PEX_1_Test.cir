@@ -1,6 +1,6 @@
 Test netlist
-.lib "/home/ryan/MagicTests/SKY130/git_open_pdks/sky130/sky130A/libs.tech/ngspice/sky130.lib.spice" tt
-.include "CDC_PEX.spice"
+.lib "/content/conda-env/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice" tt
+.include "/content/RyanCaginalp_CDC/NgSpice/CDC_PEX.spice"
 
 X0 R CF V_GND V_LOW V_HIGH V_SENSE DS1.0 DS1.1 DS1.2 DS1.3 DS1.4 DS1.5 DS1.6 DS1.7 DS1.8 DS1.9 DS1.10 DS1.11 DS1.12 DS1.13 DS1.14 DS1.15 DS2.0 DS2.1 DS2.2 DS2.3 DS2.4 DS2.5 DS2.6 DS2.7 DS2.8 DS2.9 DS2.10 DS2.11 DS2.12 DS2.13 DS2.14 DS2.15 DM.0 DM.1 DM.2 DM.3 DM.4 DM.5 DM.6 DM.7 DM.8 DM.9 DM.10 DM.11 DM.12 DM.13 DM.14 DM.15 DM.16 DM.17 DM.18 DM.19 CDC
 
