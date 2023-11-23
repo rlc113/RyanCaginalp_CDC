@@ -86,7 +86,7 @@ def data_reader(source_file, reset_time, precision):
     
     return low_power, high_power, stop_time, total_energy, ds1, ds2, dm
 
-low_power, high_power, stop_time, total_energy, ds1, ds2, dm = data_reader("/home/ryan/openROADTests/NgSpice/Test.log", 7 * pow(10, -8), 40 * pow(10, -12))
+low_power, high_power, stop_time, total_energy, ds1, ds2, dm = data_reader("/content/RyanCaginalp_CDC/NgSpice/Test.log", 7 * pow(10, -8), 40 * pow(10, -12))
 
 print("V_LOW Power: " + str(low_power) + " Watts")
 print("V_HIGH Power: " + str(high_power) + " Watts")
