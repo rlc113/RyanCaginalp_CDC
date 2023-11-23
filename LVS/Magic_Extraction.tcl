@@ -1,5 +1,5 @@
 # Read the GDS file
-gds read "/home/ryan/openROADTests/Final.gds"
+gds read "/content/RyanCaginalp_CDC/Final.gds"
 
 # Load the CDC
 load CDC
