@@ -28,7 +28,6 @@ detailed_route -output_drc post_route_check.rpt \
 			   -bottom_routing_layer met1 \
 			   -top_routing_layer met5
 
-write_def output.def
 write_def Routed.def
 write_db Routed.db
 
