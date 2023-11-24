@@ -85,13 +85,3 @@ def data_reader(source_file, reset_time, precision):
     sf.close()
     
     return low_power, high_power, stop_time, total_energy, ds1, ds2, dm
-
-low_power, high_power, stop_time, total_energy, ds1, ds2, dm = data_reader("/content/RyanCaginalp_CDC/NgSpice/Test.log", 7 * pow(10, -8), 40 * pow(10, -12))
-
-print("V_LOW Power: " + str(low_power) + " Watts")
-print("V_HIGH Power: " + str(high_power) + " Watts")
-print("Conversion Time: " + str(stop_time) + " Seconds")
-print("Total Energy: " + str(total_energy) + " Joules")
-print("First Subtraction Counter Output: " + str(ds1))
-print("Second Subtraction Counter Output: " + str(ds2))
-print("Main Counter Output: " + str(dm))
