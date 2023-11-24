@@ -130,7 +130,7 @@ add_pdn_connect -grid V_SENSE_GRID -layers {met4 met5}
 
 pdngen
 
-write_def output.def
+write_def Floorplanned.def
 write_db Floorplanned.db
 
 
