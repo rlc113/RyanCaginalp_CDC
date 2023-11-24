@@ -24,7 +24,7 @@ set_placement_padding -global -left 0 -right 0
 detailed_placement
 optimize_mirroring
 
-write_def output.def
+write_def Placed.def
 write_db Placed.db
 
 exit
