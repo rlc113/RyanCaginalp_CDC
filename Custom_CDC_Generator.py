@@ -247,8 +247,8 @@ elif chain_number == 3: V_SENSE_Height = 12
 elif chain_number == 4: V_SENSE_Height = 14
 
 #The chip height will fit snugly to the two voltage regions
-core_height = 170
-die_height = 200
+core_height = 165
+die_height = 195
 
 #Now figure out the widths
 
@@ -263,12 +263,14 @@ inv_16_width = 7.36
 transmission_gate_width = 3.22
 
 #Calculate the V_SENSE region width first
-V_SENSE_Width = inv_1_width * chain_length * 2
-if (chain_size == 4): V_SENSE_Width = inv_4_width * chain_length * 2
-if (chain_size == 6): V_SENSE_Width = inv_6_width * chain_length * 2
-if (chain_size == 8): V_SENSE_Width = inv_8_width * chain_length * 2
-if (chain_size == 12): V_SENSE_Width = inv_12_width * chain_length * 2
-if (chain_size == 16): V_SENSE_Width = inv_16_width * chain_length * 2
+V_SENSE_Width = inv_1_width * chain_length * 1
+if (chain_size == 4): V_SENSE_Width = inv_4_width * chain_length * 1
+if (chain_size == 6): V_SENSE_Width = inv_6_width * chain_length * 1
+if (chain_size == 8): V_SENSE_Width = inv_8_width * chain_length * 1
+if (chain_size == 12): V_SENSE_Width = inv_12_width * chain_length * 1
+if (chain_size == 16): V_SENSE_Width = inv_16_width * chain_length * 1
+V_SENSE_Width *= 0.75
+V_SENSE_Width += 30
 
 #Then calculate the V_HIGH region width
 V_HIGH_Width = transmission_gate_number * transmission_gate_width + inv_16_width
@@ -277,13 +279,14 @@ elif (last_inverter_size == 4): V_HIGH_Width += inv_4_width
 elif (last_inverter_size == 8): V_HIGH_Width += inv_8_width
 elif (last_inverter_size == 16): V_HIGH_Width += inv_16_width
 else: V_HIGH_Width += inv_16_width * last_inverter_size/16.0
-V_HIGH_Width *= 0.75
+V_HIGH_Width *= 0.25
+V_HIGH_Width += 30
 
 #print(V_SENSE_Width)
 #print(V_HIGH_Width)
 
 #Finally calculate the chip width
-core_width = max(V_SENSE_Width, V_HIGH_Width) * 1.2 + 100 + 30
+core_width = max(V_SENSE_Width, V_HIGH_Width) + 110
 die_width = core_width + 30
 
 source_file = open('Templates/Floorplanning_Template1.tcl', 'r')
@@ -306,7 +309,7 @@ for line in sf_lines:
         words = line.split(" ")
         words[2] = str(math.ceil(V_SENSE_Height)) + "\n"
         line = " ".join(words)
-    elif "initialize_floorplan -die_area" in line: line = 'initialize_floorplan -die_area "0 0 ' + str(math.ceil(die_width)) + ' 200" -core_area "30 30 ' + str(math.ceil(core_width)) + ' 170" -site unithd\n'
+    elif "initialize_floorplan -die_area" in line: line = 'initialize_floorplan -die_area "0 0 ' + str(math.ceil(die_width)) + ' 195" -core_area "30 30 ' + str(math.ceil(core_width)) + ' 165" -site unithd\n'
 
     df_lines.append(line)
 
@@ -344,7 +347,7 @@ for line in sf_lines:
         words = line.split(" ")
         words[2] = str(math.ceil(V_SENSE_Height)) + "\n"
         line = " ".join(words)
-    elif "initialize_floorplan -die_area" in line: line = 'initialize_floorplan -die_area "0 0 ' + str(math.ceil(die_width)) + ' 200" -core_area "30 30 ' + str(math.ceil(core_width)) + ' 170" -site unithd\n'
+    elif "initialize_floorplan -die_area" in line: line = 'initialize_floorplan -die_area "0 0 ' + str(math.ceil(die_width)) + ' 195" -core_area "30 30 ' + str(math.ceil(core_width)) + ' 165" -site unithd\n'
 
     df_lines.append(line)
 
